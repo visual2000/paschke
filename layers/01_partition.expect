@@ -36,7 +36,7 @@ send -h "DEL AUTOEXEC.BAT\r"
 send -h "COPY CON: AUTOEXEC.BAT\r"
 send -h "C:\r"
 send -h "CD WIN95\r"
-send -h "SETUP /IS /IW\r"
+send -h "SETUP /IS /IW MSBATCH.INF\r"
 send "\x1A"
 send "\r"
 

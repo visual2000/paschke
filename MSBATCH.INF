@@ -1,0 +1,91 @@
+[BatchSetup]
+Version=2.3 (32-bit)
+SaveDate=10/03/20
+[Setup]
+ProductType=1
+Express=1
+EBD=0
+ChangeDir=0
+OptionalComponents=1
+Network=1
+System=0
+CCP=0
+CleanBoot=0
+Display=0
+PenWinWarning=0
+InstallType=3
+DevicePath=0
+TimeZone="Sydney"
+Uninstall=0
+VRC=0
+NoPrompt2Boot=1
+[System]
+DisplChar=16,1024,768
+[NameAndOrg]
+Name="Retro"
+Org="Visual 2000"
+Display=0
+[Network]
+ComputerName="Docka"
+Workgroup="WORKGROUP"
+Description="An ephemeral box"
+Display=0
+PrimaryLogon=Windows
+Protocols=MSTCP
+IgnoreDetectedNetCards=1
+ValidateNetCardResources=1
+Security=SHARE
+[MSTCP]
+DHCP=1
+DNS=0
+WINS=0
+Hostname=Paschke
+[OptionalComponents]
+"Accessibility Options"=0
+"Briefcase"=0
+"Calculator"=1
+"Character Map"=0
+"Clipboard Viewer"=0
+"Desktop Wallpaper"=1
+"DMI Mgmt Service Layer"=0
+"Document Templates"=0
+"Games"=1
+"Imaging"=0
+"Mouse Pointers"=1
+"Net Watcher"=0
+"Object Packager"=0
+"Online User's Guide"=0
+"Paint"=1
+"Quick View"=0
+"System Mgmt Infrastructure"=0
+"System Monitor"=0
+"System Resource Meter"=0
+"TWAIN 1.6"=0
+"Windows 95 Tour"=0
+"WordPad"=1
+"Dial-Up Networking"=0
+"Direct Cable Connection"=0
+"HyperTerminal"=1
+"Microsoft NetMeeting"=0
+"Phone Dialer"=0
+"Backup"=0
+"Defrag"=0
+"Disk compression tools"=0
+"Microsoft Fax Services"=0
+"Microsoft Fax Viewer"=0
+"Audio Compression"=1
+"CD Player"=0
+"Media Player"=1
+"Multimedia Sound Schemes"=0
+"Sample Sounds"=1
+"Sound Recorder"=0
+"Video Compression"=1
+"Volume Control"=1
+"Additional Screen Savers"=1
+"Flying Windows"=1
+"OpenGL Screen Savers"=0
+"The Microsoft Network"=0
+"Internet Mail Services"=0
+"Windows Messaging"=0
+"Microsoft Mail Services"=0
+[Printers]

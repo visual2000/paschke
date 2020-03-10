@@ -31,14 +31,15 @@ sleep 10
 
 # Guess mount point?
 cp -rv /Volumes/WIN_95C/WIN95 /Volumes/PARSNIP/
+cp ./MSBATCH.INF /Volumes/PARSNIP/WIN95/
 
 diskutil eject /Volumes/WIN_95C
 diskutil eject /Volumes/PARSNIP
 
 sleep 10
 
-qemu-system-i386 -drive file=win95_disk.img,format=raw -m 100 -boot a -vga std -drive file=622C.IMG,format=raw,index=0,if=floppy
-
+# TODO stop when system reboots
+qemu-system-i386 -drive file=win95_disk.img,format=raw -m 100 -soundhw sb16 -boot order=ca,once=a -vga std -drive file=622C.IMG,format=raw,index=0,if=floppy
 
 # Proposed steps:
 
