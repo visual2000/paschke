@@ -12,7 +12,7 @@ if [ -f "win95_disk.img" ]; then
 fi
 
 if [ ! -f "win95_disk.img" ]; then
-    qemu-img create -f raw win95_disk.img 250M
+    qemu-img create -f raw win95_disk.img 512M
 fi
 
 # We keep a 'golden' image, because it's mounted RW, so who knows
