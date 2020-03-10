@@ -31,7 +31,7 @@ sleep 10
 
 # Guess mount point?
 cp -rv /Volumes/WIN_95C/WIN95 /Volumes/PARSNIP/
-cp ./MSBATCH.INF /Volumes/PARSNIP/WIN95/
+cp -v ./MSBATCH.INF /Volumes/PARSNIP/WIN95/
 
 diskutil eject /Volumes/WIN_95C
 diskutil eject /Volumes/PARSNIP
