@@ -23,8 +23,23 @@ gunzip --keep --force 622C.IMG.golden.gz
 mv 622C.IMG.golden 622C.IMG
 
 ./partition.expect
-# qemu-system-i386 -hda win95_disk.img -m 100 -boot a -vga std -usb -fda 622C.IMG -nographic
 
+echo "Partition and format done.  Will try prepare setup folder now."
+
+open win95_disk.img # our fresh HDD image
+open Win95_OSR2.ISO # The source CD
+
+sleep 10
+
+# Guess mount point?
+cp -rv /Volumes/WIN_95C/WIN95 /Volumes/PARSNIP/
+
+diskutil eject /Volumes/WIN_95C
+diskutil eject /Volumes/PARSNIP
+
+sleep 10
+
+qemu-system-i386 -hda win95_disk.img -m 100 -boot a -vga std -fda 622C.IMG
 
 
 # Proposed steps:
