@@ -24,8 +24,8 @@ mv 622C.IMG.golden 622C.IMG
 
 echo "Partition and format done.  Will try prepare setup folder now."
 
-open win95_disk.img # our fresh HDD image
-open Win95_OSR2.ISO # The source CD
+hdiutil attach win95_disk.img # our fresh HDD image
+hdiutil attach Win95_OSR2.ISO # The source CD
 
 sleep 10
 
