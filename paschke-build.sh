@@ -6,8 +6,6 @@ set -o pipefail
 
 echo "Welcome to Paschke.  We'll try and build a Windows 95 image here."
 
-wd=$(mktemp --directory)
-
 if [ -f "win95_disk.img" ]; then
     echo "Oops, vdisk already exists."
     exit 3
