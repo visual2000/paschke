@@ -43,10 +43,10 @@ send "\r"
 send -h "DEL FORMAT.SCP\r"
 send -h "COPY CON: FORMAT.SCP\r"
 send -h "y\r"
-send -h "PARSNIP\r"
+send -h "y\r"
 send "\x1A"
 send "\r"
-send -h "FORMAT C: /s < FORMAT.SCP\r"
+send -h "FORMAT C: /s/u/v:PARSNIP/q < FORMAT.SCP\r"
 
 expect "Serial Number"
 exit
