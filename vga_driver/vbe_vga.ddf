@@ -1,0 +1,26 @@
+;*** MakeCAB Directive file for creating VGA
+;
+.OPTION EXPLICIT                     ; Generate errors on variable typos
+
+.Set DiskLabel1=Setup                ; Label of first disk
+.Set DiskLabel2=Program              ; Label of second disk
+.Set DiskLabel3="Program Continued"  ; Label of third disk
+.Set CabinetNameTemplate=VBE_VGA.CAB ; EXCEL.1, EXCEL.2, etc.
+.set DiskDirectoryTemplate=.         ; put it here
+.Set MaxDiskSize=1.44M               ; 3.5" disks, bogus, boo
+
+;** Setup.exe and setup.inf are placed uncompressed in the first disk
+;.Set Cabinet=off
+;.Set Compress=off
+;.Set InfAttr=                        ; Turn off read-only, etc. attrs
+;bin\setup.exe                        ; Just copy SETUP.EXE as is
+;bin\setup.inf                        ; Just copy SETUP.INF as is
+
+;** The rest of the files are stored, compressed, in cabinet files
+.Set Cabinet=on
+.Set Compress=on
+VBE.vxd
+VBEMP.DRV
+vbemp.inf
+;...                                 ; Many more files
+;*** <the end>                       ; That's it
