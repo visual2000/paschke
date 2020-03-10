@@ -32,6 +32,9 @@ sleep 10
 # Guess mount point?
 cp -rv /Volumes/WIN_95C/WIN95 /Volumes/PARSNIP/
 cp -v ./MSBATCH.INF /Volumes/PARSNIP/WIN95/
+cp -v ./vga_driver/VBE.vxd /Volumes/PARSNIP/WIN95/
+cp -v ./vga_driver/VBEMP.DRV /Volumes/PARSNIP/WIN95/
+cp -v ./vga_driver/vbemp.inf /Volumes/PARSNIP/WIN95/
 
 diskutil eject /Volumes/WIN_95C
 diskutil eject /Volumes/PARSNIP
@@ -52,3 +55,6 @@ qemu-system-i386 -drive file=win95_disk.img,format=raw -m 100 -soundhw sb16 -boo
 # - remote administration of reg keys??
 # - get really good at writing PIF/BAT files?
 # - somehow know when it's done?  wait for it to open a port????
+
+# - VGA drivers.
+# - maybe only ask for 16 colour / 640x480 in MSBATCH.INF
