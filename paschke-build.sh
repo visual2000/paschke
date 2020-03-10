@@ -17,6 +17,10 @@ if [ ! -f "win95.disk" ]; then
     qemu-img create -f qcow win95.disk 250M
 fi
 
+# We keep a 'golden' image, because it's mounted RW, so who knows
+# what'll happen to it.
+gunzip --keep --force 622C.IMG.golden.gz
+mv 622C.IMG.golden 622C.IMG
 
 ./partition.expect
 # qemu-system-i386 -hda win95.disk -m 100 -boot a -vga std -usb -fda 622C.IMG -nographic
