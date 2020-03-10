@@ -39,7 +39,7 @@ diskutil eject /Volumes/PARSNIP
 
 sleep 10
 
-qemu-system-i386 -hda win95_disk.img -m 100 -boot a -vga std -fda 622C.IMG
+qemu-system-i386 -drive file=win95_disk.img,format=raw -m 100 -boot a -vga std -drive file=622C.IMG,format=raw,index=0,if=floppy
 
 
 # Proposed steps:
