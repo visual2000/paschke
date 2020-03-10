@@ -5,7 +5,7 @@
 set timeout 20
 
 # Start the guest VM
-spawn qemu-system-i386 -hda win95.disk -m 100 -boot a -vga std -usb -fda 622C.IMG -nographic
+spawn qemu-system-i386 -hda win95_disk.img -m 100 -boot a -vga std -usb -fda 622C.IMG -nographic
 
 set send_human {.1 .3 1 .05 2}
 # expect "A:\>"
@@ -31,4 +31,14 @@ send -h "fdisk < FDISK.SCP\r"
 # this shouldn't terminate:
 # The VM should auto-reboot at this point anyway.
 expect "MSCDEX"
-send -h "echo we are done now."
+
+send -h "DEL FORMAT.SCP\r"
+send -h "COPY CON: FORMAT.SCP\r"
+send -h "y\r"
+send -h "PARSNIP\r"
+send "\x1A"
+send "\r"
+send -h "FORMAT C: /s < FORMAT.SCP\r"
+
+expect "Serial Number"
+exit

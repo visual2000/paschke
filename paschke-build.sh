@@ -8,13 +8,13 @@ echo "Welcome to Paschke.  We'll try and build a Windows 95 image here."
 
 wd=$(mktemp --directory)
 
-if [ -f "win95.disk" ]; then
+if [ -f "win95_disk.img" ]; then
     echo "Oops, vdisk already exists."
     exit 3
 fi
 
-if [ ! -f "win95.disk" ]; then
-    qemu-img create -f qcow win95.disk 250M
+if [ ! -f "win95_disk.img" ]; then
+    qemu-img create -f raw win95_disk.img 250M
 fi
 
 # We keep a 'golden' image, because it's mounted RW, so who knows
@@ -23,7 +23,7 @@ gunzip --keep --force 622C.IMG.golden.gz
 mv 622C.IMG.golden 622C.IMG
 
 ./partition.expect
-# qemu-system-i386 -hda win95.disk -m 100 -boot a -vga std -usb -fda 622C.IMG -nographic
+# qemu-system-i386 -hda win95_disk.img -m 100 -boot a -vga std -usb -fda 622C.IMG -nographic
 
 
 
