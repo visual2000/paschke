@@ -38,7 +38,6 @@ diskutil eject /Volumes/PARSNIP
 
 sleep 10
 
-# TODO stop when system reboots
 qemu-system-i386 -drive file=win95_disk.img,format=raw -m 100 -soundhw sb16 -boot order=ca,once=a -vga std -drive file=622C.IMG,format=raw,index=0,if=floppy
 
 # Proposed steps:
