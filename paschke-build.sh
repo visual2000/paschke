@@ -22,7 +22,7 @@ fi
 gunzip --keep --force 622C.IMG.golden.gz
 mv 622C.IMG.golden 622C.IMG
 
-./partition.expect
+./layers/01_partition.expect
 
 echo "Partition and format done.  Will try prepare setup folder now."
 
