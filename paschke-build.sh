@@ -32,6 +32,7 @@ sleep 10
 # Guess mount point?
 cp -rv /Volumes/WIN_95C/WIN95 /Volumes/PARSNIP/
 cp -v ./MSBATCH.INF /Volumes/PARSNIP/WIN95/
+cp -v ./CUSTOM.INF /Volumes/PARSNIP/WIN95/
 cp -v ./vga_driver/VBE.vxd /Volumes/PARSNIP/WIN95/
 cp -v ./vga_driver/VBEMP.DRV /Volumes/PARSNIP/WIN95/
 cp -v ./vga_driver/vbemp.inf /Volumes/PARSNIP/WIN95/

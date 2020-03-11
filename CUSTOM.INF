@@ -1,0 +1,39 @@
+; found at https://msfn.org/board/topic/135059-can-there-be-setup-modification-project-like-98lite/page/2/?tab=comments#comment-871321
+
+[Version]
+signature="$CHICAGO$"
+
+[DestinationDirs]
+; 2 is the temporary setup directory where the contents of precopy*.cab get expanded to before the actual filecopy phase starts. 17 is the normal inf folder.
+PreCopyFiles=2				  ; Windows temp setup directory
+;PreCatCopyFiles=2			 ; Windows temp setup directory
+InfCopyFiles=17				 ; Windows \inf directory
+;CatCopyFiles=10,CATROOT  ; Windows \CATROOT directory
+
+;this section is automatically loaded and the copyfiles sections named in it are executed during the precopy phase.
+; normally it's used to copy driver infs to the temporary setup directory
+; since the registry doesn't exist during the precopy phase of setup, I doubt you can do much of anything else with it
+[Custom_Precopy]
+CopyFiles=PreCopyFiles
+
+[PreCopyFiles]
+vbemp.inf
+
+; I have played with this section a little - you can use it to copy any files anywhere, not just infs.
+; I haven't tried putting an "addreg" section here, since msbatch.inf works just fine for doing addreg stuff.
+[BaseWinOptions]
+InfCopy
+
+[InfCopy]
+CopyFiles=InfCopyFiles
+
+[InfCopyFiles]
+vbemp.inf
+
+;I once tried compressing the driver infs into a cab. I ran into problems,
+;but I think it was because I had made a mistake somewhere.
+[SourceDisksNames]
+1="Paul's BEAR VGA", "", 0
+
+[SourceDisksFiles]
+vbemp.inf=1
