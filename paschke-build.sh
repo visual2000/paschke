@@ -46,11 +46,6 @@ qemu-system-i386 -drive file=win95_disk.img,format=raw -m 100 -soundhw sb16 -boo
 
 # Proposed steps:
 
-# find a msbatch.inf?? file somewhere
-# add it to the /WIN95 folder
-
-
-# Try boot it all up in qemu i386???
 
 # Wishlist:
 # - remote administration of reg keys??
