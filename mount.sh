@@ -7,7 +7,10 @@ set -o pipefail
 function mount() {
     # This function mounts an image and returns the mount point.
 
-    [ -f "$1" ] || (echo "Cannot find image $1!"; exit 2)
+    if [ ! -f "$1" ]; then
+        echo "Cannot find image $1!" 1>&2
+        exit 2
+    fi
 
     local output
     output=$(hdiutil attach "$1")
