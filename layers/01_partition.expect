@@ -1,52 +1,14 @@
 #!/usr/bin/expect -f
 
-# Wait enough (forever) until a long-time boot
-#set timeout -1
-set timeout 20
+# Wait enough (5 minutes) until a long-time boot.  After FDISK, the
+# box reboots once, too.
+set timeout 300
 
 # Start the guest VM
 spawn qemu-system-i386 -drive file=win95_disk.img,format=raw -m 100 -boot a -vga std -drive file=622C.IMG,format=raw,index=0,if=floppy -nographic
 
-set send_human {.1 .3 1 .05 2}
-# expect "A:\>"
-expect "MSCDEX"
-# send "dir\r\n"
-
-
-# expect "A:\>"
-# send -h "I'm hungry.  Let's do lunch."
-
-send -h "DEL FDISK.SCP\r"
-send -h "COPY CON: FDISK.SCP\r"
-send -h "1\r"
-send -h "1\r"
-send -h "y\r"
-send "\x1A"
-send "\r"
-
-send -h "TYPE FDISK.SCP\r"
-
-send -h "fdisk < FDISK.SCP\r"
-
-# this shouldn't terminate:
-# The VM should auto-reboot at this point anyway.
-expect "MSCDEX"
-
-send -h "DEL AUTOEXEC.BAT\r"
-send -h "COPY CON: AUTOEXEC.BAT\r"
-send -h "C:\r"
-send -h "CD WIN95\r"
-send -h "SETUP /IS /IW MSBATCH.INF\r"
-send "\x1A"
-send "\r"
-
-send -h "DEL FORMAT.SCP\r"
-send -h "COPY CON: FORMAT.SCP\r"
-send -h "y\r"
-send -h "y\r"
-send "\x1A"
-send "\r"
-send -h "FORMAT C: /s/u/v:PARSNIP/q < FORMAT.SCP\r"
-
+# This is a magic string that we expect after the final step
+# (formatting C: as FAT) is done.  It is contained in FORMAT's output,
+# "Volume Serial Number is ...".
 expect "Serial Number"
 exit

@@ -4,6 +4,8 @@ set -o nounset
 set -o errexit
 set -o pipefail
 
+source ./mount.sh
+
 echo "Welcome to Paschke.  We'll try and build a Windows 95 image here."
 
 if [ -f "win95_disk.img" ]; then
@@ -20,9 +22,27 @@ fi
 gunzip --keep --force 622C.IMG.golden.gz
 mv 622C.IMG.golden 622C.IMG
 
+# the MS-DOS 6.22 floppy image
+dos_boot_mountpoint=$(mount 622C.IMG)
+cp -v FDISK.SCP "$dos_boot_mountpoint"
+cp -v FDISK.BAT "$dos_boot_mountpoint"
+cp -v FORMAT.SCP "$dos_boot_mountpoint"
+cp -v FORMAT.BAT "$dos_boot_mountpoint"
+# This AUTOEXEC partitions and formats.  There's also one to kick off
+# the setup, but we stick it on the floppy later.
+cp -v partition.AUTOEXEC.BAT "$dos_boot_mountpoint/AUTOEXEC.BAT"
+eject "$dos_boot_mountpoint"
+
 ./layers/01_partition.expect
 
 echo "Partition and format done.  Will try prepare setup folder now."
+
+# We have to mount the MS-DOS 6.22 floppy image again, to add an
+# AUTOEXEC.BAT, which kicks off SETUP.EXE.  If we added it up above,
+# it wouldn't have done the formatting correctly.
+dos_boot_mountpoint=$(mount 622C.IMG)
+cp -v runsetup.AUTOEXEC.BAT "$dos_boot_mountpoint/AUTOEXEC.BAT"
+eject "$dos_boot_mountpoint"
 
 hdiutil attach win95_disk.img # our fresh HDD image
 hdiutil attach Win95_OSR2.ISO # The source CD
