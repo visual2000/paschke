@@ -24,6 +24,7 @@ mv 622C.IMG.golden 622C.IMG
 
 # the MS-DOS 6.22 floppy image
 dos_boot_mountpoint=$(mount 622C.IMG)
+rm -v "$dos_boot_mountpoint/CONFIG.SYS"
 cp -v FDISK.SCP "$dos_boot_mountpoint"
 cp -v FDISK.BAT "$dos_boot_mountpoint"
 cp -v FORMAT.SCP "$dos_boot_mountpoint"
