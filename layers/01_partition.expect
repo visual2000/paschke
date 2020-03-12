@@ -5,7 +5,7 @@
 set timeout 300
 
 # Start the guest VM
-spawn qemu-system-i386 -drive file=win95_disk.img,format=raw -m 100 -boot a -vga std -drive file=622C.IMG,format=raw,index=0,if=floppy -nographic
+spawn qemu-system-i386 -drive file=win95_disk.img,format=raw -m 100 -boot a -vga std -drive file=622C.IMG,format=raw,index=0,if=floppy -nographic -nic none
 
 # This is a magic string that we expect after the final step
 # (formatting C: as FAT) is done.  It is contained in FORMAT's output,
