@@ -39,7 +39,7 @@ Name="Retro"
 Org="Visual 2000"
 Display=0
 [Network]
-ComputerName="Docka"
+ComputerName="PASCHKE"
 Workgroup="WORKGROUP"
 Description="An ephemeral box"
 Display=0
