@@ -36,6 +36,7 @@ eject "$dos_boot_mountpoint"
 
 ./layers/01_partition.expect
 
+echo ""
 echo "Partition and format done.  Will try prepare setup folder now."
 
 # We have to mount the MS-DOS 6.22 floppy image again, to add an
@@ -62,6 +63,8 @@ diskutil eject /Volumes/WIN_95C
 diskutil eject /Volumes/PARSNIP
 
 sleep 10
+echo ""
+echo "Starting Windows setup run..."
 
 qemu-system-i386 -drive file=win95_disk.img,format=raw -m 100 -soundhw sb16 -boot order=ca,once=a -vga std -drive file=622C.IMG,format=raw,index=0,if=floppy
 
