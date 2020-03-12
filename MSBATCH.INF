@@ -1,3 +1,4 @@
+; -*- mode: conf -*-
 [BatchSetup]
 
 Version=2.3 (32-bit)
