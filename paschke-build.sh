@@ -63,7 +63,7 @@ eject "${hdd_mount}"
 echo ""
 echo "Starting Windows setup run..."
 
-qemu-system-i386 -drive file=win95_disk.img,format=raw -m 100 -soundhw sb16 -boot order=ca,once=a -vga std -drive file=622C.IMG,format=raw,index=0,if=floppy
+qemu-system-i386 -drive file=win95_disk.img,format=raw -m 100 -boot order=ca,once=a -vga std -drive file=622C.IMG,format=raw,index=0,if=floppy -nic none
 
 # Proposed steps:
 
