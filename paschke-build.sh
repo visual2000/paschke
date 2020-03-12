@@ -46,23 +46,20 @@ dos_boot_mountpoint=$(mount 622C.IMG)
 cp -v runsetup.AUTOEXEC.BAT "$dos_boot_mountpoint/AUTOEXEC.BAT"
 eject "$dos_boot_mountpoint"
 
-hdiutil attach win95_disk.img # our fresh HDD image
-hdiutil attach Win95_OSR2.ISO # The source CD
-
-sleep 10
+hdd_mount=$(mount win95_disk.img) # our fresh HDD image
+win_cdrom=$(mount "Win95 OSR2.ISO") # The source CD
 
 # Guess mount point?
-cp -rv /Volumes/WIN_95C/WIN95 /Volumes/PARSNIP/
-cp -v ./MSBATCH.INF /Volumes/PARSNIP/WIN95/
-cp -v ./CUSTOM.INF /Volumes/PARSNIP/WIN95/
-cp -v ./vga_driver/VBE.vxd /Volumes/PARSNIP/WIN95/
-cp -v ./vga_driver/VBEMP.DRV /Volumes/PARSNIP/WIN95/
-cp -v ./vga_driver/vbemp.inf /Volumes/PARSNIP/WIN95/
+cp -rv "${win_cdrom}/WIN95" "${hdd_mount}/"
+cp -v  "./MSBATCH.INF" "${hdd_mount}/WIN95/"
+cp -v  "./CUSTOM.INF" "${hdd_mount}/WIN95/"
+cp -v  "./vga_driver/VBE.vxd" "${hdd_mount}/WIN95/"
+cp -v  "./vga_driver/VBEMP.DRV" "${hdd_mount}/WIN95/"
+cp -v  "./vga_driver/vbemp.inf" "${hdd_mount}/WIN95/"
 
-diskutil eject /Volumes/WIN_95C
-diskutil eject /Volumes/PARSNIP
+eject "${win_cdrom}"
+eject "${hdd_mount}"
 
-sleep 10
 echo ""
 echo "Starting Windows setup run..."
 
