@@ -15,7 +15,7 @@ function mount() {
     local output
     output=$(hdiutil attach "$1")
 
-    echo "$output" | awk '{print $2}'
+    echo "$output" | sed -n 's#.*\(/Volume.*\)$#\1#p'
 }
 
 function eject() {
