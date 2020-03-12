@@ -33,7 +33,7 @@ Uninstall=0
 VRC=0
 NoPrompt2Boot=1
 [System]
-;DisplChar=16,800,600
+DisplChar=24,1024,768  ; 16.7 million colors (24-bit) 1024 x 768
 [NameAndOrg]
 Name="Retro"
 Org="Visual 2000"

@@ -10,7 +10,7 @@ clean:
 
 .PHONY: check
 check:
-	shellcheck $(wildcard *.sh)
+	shellcheck $(wildcard *.sh) $(wildcard lib/*.sh)
 
 .PHONY: build
 build:
