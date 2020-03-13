@@ -11,7 +11,6 @@ Signature = "$CHICAGO$"
 ProductType=1
 ; This specifies the Product ID for your site, which is printed on the
 ; Win95 compact disc or your Certification of Authenticity
-;
 ProductID="111-1111111"
 
 Express=1 ; Bypass 'Welcome' screen
