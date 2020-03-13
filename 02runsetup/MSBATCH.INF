@@ -54,7 +54,7 @@ WINS=0
 Hostname=Paschke
 [OptionalComponents]
 "Accessibility Options"=0
-"Briefcase"=0
+"Briefcase"=1
 "Calculator"=1
 "Character Map"=0
 "Clipboard Viewer"=0
