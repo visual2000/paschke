@@ -100,8 +100,3 @@ Hostname=Paschke
 "Windows Messaging"=0
 "Microsoft Mail Services"=0
 [Printers]
-
-[InstallLocationsMRU]
-
-[load_inf]
-vbemp.inf
