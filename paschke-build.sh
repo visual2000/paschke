@@ -46,16 +46,21 @@ dos_boot_mountpoint=$(mount images/622C.IMG)
 cp -v 02runsetup/runsetup.AUTOEXEC.BAT "$dos_boot_mountpoint/AUTOEXEC.BAT"
 eject "$dos_boot_mountpoint"
 
+# Grab actual mount points:
 hdd_mount=$(mount win95_disk.img) # our fresh HDD image
 win_cdrom=$(mount "images/Win95 OSR2.ISO") # The source CD
 
-# Guess mount point?
-cp -rv "${win_cdrom}/WIN95" "${hdd_mount}/"
-cp -v  "./02runsetup/MSBATCH.INF" "${hdd_mount}/WIN95/"
-cp -v  "./02runsetup/CUSTOM.INF" "${hdd_mount}/WIN95/"
-cp -v  "./02runsetup/vga_driver/VBE.vxd" "${hdd_mount}/WIN95/"
-cp -v  "./02runsetup/vga_driver/VBEMP.DRV" "${hdd_mount}/WIN95/"
-cp -v  "./02runsetup/vga_driver/vbemp.inf" "${hdd_mount}/WIN95/"
+# Windows ISOs don't always have consistent capitalisation, so maybe
+# it's D:\WIN95, or maybe it's D:\win95 we need...
+install_folder_path=$(find "${win_cdrom}" -iname win95)
+install_folder_basename=$(basename "${install_folder_path}")
+
+cp -rv "${win_cdrom}/${install_folder_basename}" "${hdd_mount}/"
+cp -v  "./02runsetup/MSBATCH.INF" "${hdd_mount}/${install_folder_basename}/"
+cp -v  "./02runsetup/CUSTOM.INF" "${hdd_mount}/${install_folder_basename}/"
+cp -v  "./02runsetup/vga_driver/VBE.vxd" "${hdd_mount}/${install_folder_basename}/"
+cp -v  "./02runsetup/vga_driver/VBEMP.DRV" "${hdd_mount}/${install_folder_basename}/"
+cp -v  "./02runsetup/vga_driver/vbemp.inf" "${hdd_mount}/${install_folder_basename}/"
 
 eject "${win_cdrom}"
 eject "${hdd_mount}"
