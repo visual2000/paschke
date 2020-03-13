@@ -15,3 +15,7 @@ check:
 .PHONY: build
 build:
 	./paschke-build.sh
+
+.PHONY: boot
+boot: win95_disk.img
+	qemu-system-i386 -drive file=$<,format=raw -m 100 -boot c -vga std -nic none
