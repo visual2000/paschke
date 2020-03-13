@@ -14,10 +14,9 @@ ProductType=1
 ;
 ProductID="111-1111111"
 
-Express=1
+Express=1 ; Bypass 'Welcome' screen
 
-; no emergency boot disk
-EBD=0
+EBD=0 ; no emergency boot disk
 ChangeDir=0
 OptionalComponents=1
 Network=1
