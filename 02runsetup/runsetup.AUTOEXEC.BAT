@@ -12,4 +12,4 @@ REM /iq Do not run ScanDisk, starting in DOS
 REM /IW Supposedly to suppress EULA
 REM /IV Supposedly to suppress various dialogs
 
-SETUP.EXE /C /d /id /im /is /iq /IW /IV MSBATCH.INF
+SETUP.EXE /C /d /is /IW /IV MSBATCH.INF
