@@ -34,7 +34,7 @@ vbemp.inf
 ;I once tried compressing the driver infs into a cab. I ran into problems,
 ;but I think it was because I had made a mistake somewhere.
 [SourceDisksNames]
-1="Paul's BEAR VGA", "", 0
+1="BEAR VGA", "", 0
 
 [SourceDisksFiles]
 vbemp.inf=1
