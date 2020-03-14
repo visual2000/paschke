@@ -18,4 +18,10 @@ build:
 
 .PHONY: boot
 boot: win95_disk.img
-	qemu-system-i386 -drive file=$<,format=raw -m 100 -boot c -vga std -nic none
+	qemu-system-i386 \
+	    -drive file=$<,format=raw \
+	    -cpu pentium \
+	    -m 100 \
+	    -boot c \
+	    -vga std \
+	    -nic none
