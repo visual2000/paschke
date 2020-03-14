@@ -21,33 +21,20 @@ fi
 # what'll happen to it.
 gunzip --keep --force images/win95b-boot.img.gz
 
-# Make a FAT partition on that thing
-sudo fdisk -u ./win95_disk.img > /dev/null <<EOF
-o
-n
-p
-1
+# Use a boot disk to partition & format
+dos_disk=$(image_mount images/win95b-boot.img)
+rm -v "$dos_disk/CONFIG.SYS"
+cp -v "01partition/FDISK.SCP" "$dos_disk"
+cp -v "01partition/FDISK.BAT" "$dos_disk"
+cp -v "01partition/FORMAT.SCP" "$dos_disk"
+cp -v "01partition/FORMAT.BAT" "$dos_disk"
 
+cp -v "01partition/partition.AUTOEXEC.BAT" "$dos_disk/AUTOEXEC.BAT"
 
+eject "${dos_disk}"
 
-t
-c
-
-a
-
-w
-
-EOF
-
-# Now just show results
-sudo fdisk -lu ./win95_disk.img
-
-## Format as FAT32
-
-# Find a loopback device for it
-loopback=$(sudo losetup --partscan --show --find ./win95_disk.img)
-sudo mkfs.fat -F 16 -n TURNIP "${loopback}p1"
-sudo losetup --detach "${loopback}"
+export BOOTDISK="images/win95b-boot.img"
+./01partition/partition.expect
 
 echo ""
 echo "Partition and format done.  Will try prepare setup folder now."
