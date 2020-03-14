@@ -14,35 +14,36 @@ if [ -f "win95_disk.img" ]; then
 fi
 
 if [ ! -f "win95_disk.img" ]; then
-    qemu-img create -f raw win95_disk.img 400M
+#    qemu-img create -f raw win95_disk.img 400M
+    cp images/hdd-512mb.img ./win95_disk.img
 fi
 
 # We keep a 'golden' image, because it's mounted RW, so who knows
 # what'll happen to it.
-gunzip --keep --force images/win95b-boot.img.gz
+gunzip --keep --force images/622C.IMG.gz
 
-# Use a boot disk to partition & format
-dos_disk=$(image_mount images/win95b-boot.img)
-rm -v "$dos_disk/CONFIG.SYS"
-cp -v "01partition/FDISK.SCP" "$dos_disk"
-cp -v "01partition/FDISK.BAT" "$dos_disk"
-cp -v "01partition/FORMAT.SCP" "$dos_disk"
-cp -v "01partition/FORMAT.BAT" "$dos_disk"
-
-cp -v "01partition/partition.AUTOEXEC.BAT" "$dos_disk/AUTOEXEC.BAT"
-
-eject "${dos_disk}"
-
-export BOOTDISK="images/win95b-boot.img"
-./01partition/partition.expect
-
-echo ""
-echo "Partition and format done.  Will try prepare setup folder now."
+# # Use a boot disk to partition & format
+# dos_disk=$(image_mount images/622C.IMG)
+# rm -v "$dos_disk/CONFIG.SYS"
+# cp -v "01partition/FDISK.SCP" "$dos_disk"
+# cp -v "01partition/FDISK.BAT" "$dos_disk"
+# cp -v "01partition/FORMAT.SCP" "$dos_disk"
+# cp -v "01partition/FORMAT.BAT" "$dos_disk"
+# 
+# cp -v "01partition/partition.AUTOEXEC.BAT" "$dos_disk/AUTOEXEC.BAT"
+# 
+# eject "${dos_disk}"
+# 
+# export BOOTDISK="images/622C.IMG"
+# ./01partition/partition.expect
+# 
+# echo ""
+# echo "Partition and format done.  Will try prepare setup folder now."
 
 # We have to mount the MS-DOS 6.22 floppy image again, to add an
 # AUTOEXEC.BAT, which kicks off SETUP.EXE.  If we added it up above,
 # it wouldn't have done the formatting correctly.
-dos_boot_mountpoint=$(image_mount images/win95b-boot.img)
+dos_boot_mountpoint=$(image_mount images/622C.IMG)
 cp -v 02runsetup/runsetup.AUTOEXEC.BAT "$dos_boot_mountpoint/AUTOEXEC.BAT"
 eject "$dos_boot_mountpoint"
 
@@ -74,7 +75,7 @@ qemu-system-i386 -drive file=win95_disk.img,format=raw \
                  -m 100 \
                  -boot order=ca,once=a \
                  -vga std \
-                 -drive file=images/win95b-boot.img,format=raw,index=0,if=floppy \
+                 -drive file=images/622C.IMG,format=raw,index=0,if=floppy \
                  -nic none
 
 # Proposed steps:
