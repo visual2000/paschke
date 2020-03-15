@@ -16,6 +16,7 @@ check:
 build:
 	./paschke-build.sh
 
+DISK = win95_disk.img
 .PHONY: boot
 boot: $(DISK)
 	qemu-system-i386 \
