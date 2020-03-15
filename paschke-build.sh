@@ -18,9 +18,6 @@ if [ -f "win95_disk.img" ]; then
     exit 3
 fi
 
-if [ ! -f "win95_disk.img" ]; then
-    qemu-img create -f raw win95_disk.img 400M
-fi
 
 # We keep a 'golden' image, because it's mounted RW, so who knows
 # what'll happen to it.
@@ -28,33 +25,8 @@ gunzip --keep --force images/win95b-boot.img.gz
 
 # Have a look at https://www.richud.com/wiki/Ubuntu_Create_Hard_Drive_Image for some golden tips about blessing a Win9x partition correctly.
 
-# Make a FAT partition on that thing
-sudo fdisk -u ./win95_disk.img > /dev/null <<EOF
-o
-n
-p
-1
-
-
-
-t
-e
-
-a
-
-w
-
-EOF
-
-# Now just show results
-sudo fdisk -lu ./win95_disk.img
-
-## Format as FAT32
-
-# Find a loopback device for it
-loopback=$(sudo losetup --partscan --show --find ./win95_disk.img)
-sudo mkfs.fat -F 16 -n TURNIP "${loopback}p1"
-sudo losetup --detach "${loopback}"
+gunzip --keep --force images/hdd-512mb.img.gz
+mv images/hdd-512mb.img ./win95_disk.img
 
 echo ""
 echo "Partition and format done.  Will try prepare setup folder now."
