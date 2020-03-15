@@ -153,7 +153,7 @@ ValidatedLogon=0
 [InstallLocationsMRU]
 
 [Install]
-AddReg=RunOnce.BatchDelay,Run.Installed.Components,Skip.PCMCIA.Wizard,Registry.WinUpdate
+AddReg=RunOnce.BatchDelay,Run.Installed.Components,Skip.PCMCIA.Wizard,Registry.WinUpdate,RunOnce.PaschkeRuntimes
 
 [RunOnce.BatchDelay]
 HKLM,%KEY_RUNONCE%,BatchRun1,,"%25%\rundll.exe setupx.dll,InstallHinfSection Delete.MSN.Icon 4 %10%\msbatch.inf"
@@ -258,3 +258,8 @@ QuickLaunch.Icons=49050,Micros~1\Intern~1\QuickL~1
 KEY_RUNONCE="SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce"
 KEY_INSTALLEDCOMPS="SOFTWARE\Microsoft\Active Setup\Installed Components"
 OnlineLong="Online Services"
+
+
+[RunOnce.PaschkeRuntimes]
+HKLM,%KEY_RUNONCE%,BatchVBRUN60,,"%25%\rundll32.exe advpack.dll,LaunchINFSection C:\vbrun60\vbrun60.inf,DefaultInstall"
+HKLM,%KEY_RUNONCE%,BatchMSCOMCTL,,"%25%\rundll32.exe advpack.dll,LaunchINFSection C:\mscomctl\mscmupd.inf,DefaultInstall"

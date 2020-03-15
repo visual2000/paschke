@@ -57,6 +57,8 @@ cp -v  "./02runsetup/CUSTOM.INF" "${hdd_mount}/${install_folder_basename}/"
 cp -v  "./02runsetup/vga_driver/VBE.vxd" "${hdd_mount}/${install_folder_basename}/"
 cp -v  "./02runsetup/vga_driver/VBEMP.DRV" "${hdd_mount}/${install_folder_basename}/"
 cp -v  "./02runsetup/vga_driver/vbemp.inf" "${hdd_mount}/${install_folder_basename}/"
+cp -rv "./02runsetup/mscomctl" "${hdd_mount}/"
+cp -rv "./02runsetup/vbrun60" "${hdd_mount}/"
 
 eject "${win_cdrom}"
 eject "${hdd_mount}"
