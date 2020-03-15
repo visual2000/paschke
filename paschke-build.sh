@@ -21,6 +21,8 @@ fi
 # what'll happen to it.
 gunzip --keep --force images/win95b-boot.img.gz
 
+# Have a look at https://www.richud.com/wiki/Ubuntu_Create_Hard_Drive_Image for some golden tips about blessing a Win9x partition correctly.
+
 # Make a FAT partition on that thing
 sudo fdisk -u ./win95_disk.img > /dev/null <<EOF
 o
