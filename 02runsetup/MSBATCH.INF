@@ -1,21 +1,28 @@
 ; -*- mode: conf -*-
-[BatchSetup]
+; MSBATCH.INF
+;
+; Copyright (c) 1995-1998 Microsoft Corporation.
+; All rights reserved.
+;
 
-Version=2.3 (32-bit)
-SaveDate=10/03/20
+[BatchSetup]
+Version=3.0 (32-bit)
+SaveDate=03/15/20
 
 [Version]
 Signature = "$CHICAGO$"
+AdvancedINF=2.5
+LayoutFile=layout.inf
 
 [Setup]
-ProductType=1
-; This specifies the Product ID for your site, which is printed on the
-; Win95 compact disc or your Certification of Authenticity
-ProductID="111-1111111"
-
-Express=1 ; Bypass 'Welcome' screen
-
-EBD=0 ; no emergency boot disk
+Express=1
+InstallDir="C:\WINDOWS"
+InstallType=3
+; This is the "public knowledge" abandonware key supplied by Microsoft
+; for Win98.
+ProductKey="VP9VV-VJW7Q-MHY6W-JK47R-M2KGJ"
+EBD=0
+ShowEula=0
 ChangeDir=0
 OptionalComponents=1
 Network=1
@@ -23,36 +30,42 @@ System=0
 CCP=0
 CleanBoot=0
 Display=0
-PenWinWarning=0
-InstallType=3
 DevicePath=0
+NoDirWarn=1
 TimeZone="GMT"
 Uninstall=0
-VRC=0
 NoPrompt2Boot=1
+
 [System]
 Display="VBE Miniport" ; Comes from vbemp.inf
 Monitor="QEMU Monitor"
 DisplChar=24,1024,768 ; 16.7 million colors (24-bit) 1024 x 768
+Locale=L0409
+SelectedKeyboard=KEYBOARD_00000409
+
 [NameAndOrg]
-Name="Retro"
+Name="Retro User"
 Org="Visual 2000"
 Display=0
+
 [Network]
-ComputerName="PASCHKE"
+ComputerName="Paschke"
 Workgroup="WORKGROUP"
-Description="An ephemeral box"
+Description="Just a generated image."
 Display=0
 PrimaryLogon=Windows
 Protocols=MSTCP
-IgnoreDetectedNetCards=1
-ValidateNetCardResources=1
 Security=SHARE
+
 [MSTCP]
+LMHOSTS=0
 DHCP=1
 DNS=0
-WINS=0
-Hostname=Paschke
+WINS=D
+
+[VREDIR]
+ValidatedLogon=0
+
 [OptionalComponents]
 "Accessibility Options"=0
 "Briefcase"=1
@@ -102,3 +115,112 @@ Hostname=Paschke
 "Windows Messaging"=0
 "Microsoft Mail Services"=0
 [Printers]
+
+[InstallLocationsMRU]
+
+[Install]
+AddReg=RunOnce.BatchDelay,Run.Installed.Components,Skip.PCMCIA.Wizard,Registry.WinUpdate
+
+[RunOnce.BatchDelay]
+HKLM,%KEY_RUNONCE%,BatchRun1,,"%25%\rundll.exe setupx.dll,InstallHinfSection Delete.MSN.Icon 4 %10%\msbatch.inf"
+HKLM,%KEY_RUNONCE%,BatchRun2,,"%25%\rundll.exe setupx.dll,InstallHinfSection Delete.Welcome 4 %10%\msbatch.inf"
+HKLM,%KEY_RUNONCE%,BatchRun3,,"%25%\rundll.exe setupx.dll,InstallHinfSection Delete.Regwiz 4 %10%\msbatch.inf"
+
+[Run.Installed.Components]
+HKLM,%KEY_INSTALLEDCOMPS%\>BatchSetupx,,,">Batch 98 - General Settings"
+HKLM,%KEY_INSTALLEDCOMPS%\>BatchSetupx,IsInstalled,1,01,00,00,00
+HKLM,%KEY_INSTALLEDCOMPS%\>BatchSetupx,Version,,"3,0,0,0"
+HKLM,%KEY_INSTALLEDCOMPS%\>BatchSetupx,StubPath,,"%25%\rundll.exe setupx.dll,InstallHinfSection Installed.Components.General 4 %10%\msbatch.inf"
+HKLM,%KEY_INSTALLEDCOMPS%\BatchSetupx,,,"ICW"
+HKLM,%KEY_INSTALLEDCOMPS%\BatchSetupx,IsInstalled,1,01,00,00,00
+HKLM,%KEY_INSTALLEDCOMPS%\BatchSetupx,Version,,"3,0,0,0"
+HKLM,%KEY_INSTALLEDCOMPS%\BatchSetupx,StubPath,,"%24%\progra~1\intern~1\connec~1\icwconn1 /restoredesktop
+HKLM,%KEY_INSTALLEDCOMPS%\>BatchAdvpack,,,">Batch 98 - Advanced Settings"
+HKLM,%KEY_INSTALLEDCOMPS%\>BatchAdvpack,IsInstalled,1,01,00,00,00
+HKLM,%KEY_INSTALLEDCOMPS%\>BatchAdvpack,Version,,"3,0,0,0"
+HKLM,%KEY_INSTALLEDCOMPS%\>BatchAdvpack,StubPath,,"%25%\rundll32.exe advpack.dll,LaunchINFSection %10%\msbatch.inf,Installed.Components.Advanced"
+HKLM,%KEY_INSTALLEDCOMPS%\>Batchwu,,,">Batch 98 - Windows Update"
+HKLM,%KEY_INSTALLEDCOMPS%\>Batchwu,IsInstalled,1,01,00,00,00
+HKLM,%KEY_INSTALLEDCOMPS%\>Batchwu,Version,,"3,0,0,0"
+HKLM,%KEY_INSTALLEDCOMPS%\>Batchwu,StubPath,,"wupdmgr.exe -shortcut"
+
+[Installed.Components.General]
+AddReg=Shell.Prep
+BitReg=Shell.Settings
+
+[DelOEdesktop]
+setup.ini, progman.groups,, "groupOE=..\..\desktop"
+setup.ini, groupOE,, """Outlook Express"""                ;deletes icon
+
+[Installed.Components.Advanced]
+DelFiles=OLS.Icons, QuickLaunch.Icons
+CustomDestination=Custom.Dest
+RunPostSetupCommands=DirCleanup
+
+[Custom.Dest]
+49070=DesktopLDIDSection,5
+49050=QuickLinksLDIDSection,5
+
+[Delete.MSN.Icon]
+DelReg=MSN.Icon
+
+[MSN.Icon]
+HKLM,SOFTWARE\Microsoft\Windows\CurrentVersion\explorer\Desktop\NameSpace\{4B876A40-4EE8-11D1-811E-00C04FB98EEC},,,
+
+[DesktopLDIDSection]
+HKCU,"SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders",Desktop,OLSFolder,"%25%\Desktop"
+
+[OLS.Icons]
+americ~1.lnk
+at&two~1.lnk
+compus~1.lnk
+prodig~1.lnk
+themic~1.lnk
+aboutt~1.lnk
+abouto~1.txt
+services.txt
+
+[DirCleanup]
+rundll32.exe advpack.dll,DelNodeRunDLL32 %49070%\%OnlineLong%
+
+[Delete.Welcome]
+DelReg=Registry.Welcome
+
+[Registry.Welcome]
+HKLM,Software\Microsoft\Windows\CurrentVersion\Run,Welcome,,
+
+[Delete.Regwiz]
+AddReg=Registry.Regwiz
+
+[Registry.Regwiz]
+HKLM,Software\Microsoft\Windows\CurrentVersion\Welcome\Regwiz,@,1,01,00,00,00
+HKLM,Software\Microsoft\Windows\CurrentVersion,RegDone,1,01,00,00,00
+
+[Registry.WinUpdate]
+HKLM,Software\Microsoft\Windows\CurrentVersion\Policies\Explorer,NoDevMgrUpdate,0x10001,1
+HKLM,Software\Microsoft\Windows\CurrentVersion\Policies\Explorer,NoWindowsUpdate,0x10001,1
+
+[Shell.Prep]
+HKCU,"Software\Microsoft\Internet Explorer\Desktop\Components\0",Flags,01,00,00,00
+HKCU,"Software\Microsoft\Internet Explorer\main",Show_ChannelBand,0,"no"
+
+[Shell.Settings]
+HKCU,"Software\Microsoft\Internet Explorer\Desktop\Components\0",Flags,0,20,1
+
+[QuickLinksLDIDSection]
+HKCU,"SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders",AppData,QuickLaunch,"%25%\Application Data"
+
+[QuickLaunch.Icons]
+viewch~1.scf
+
+[Skip.PCMCIA.Wizard]
+HKLM,System\CurrentControlSet\Services\Class\PCMCIA,SkipWizardForBatchSetup,,1
+
+[DestinationDirs]
+OLS.Icons=49070,Online~1
+QuickLaunch.Icons=49050,Micros~1\Intern~1\QuickL~1
+
+[Strings]
+KEY_RUNONCE="SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce"
+KEY_INSTALLEDCOMPS="SOFTWARE\Microsoft\Active Setup\Installed Components"
+OnlineLong="Online Services"
