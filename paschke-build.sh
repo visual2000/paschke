@@ -45,6 +45,10 @@ win_cdrom=$(image_mount "images/Win95 OSR2.ISO" ro) # The source CD
 # Windows ISOs don't always have consistent capitalisation, so maybe
 # it's D:\WIN95, or maybe it's D:\win95 we need...
 install_folder_path=$(find "${win_cdrom}" -iname win95)
+if [ -z "$install_folder_path" ]; then
+    echo "Oh no, can't find Windows install files!  Bailing."
+    exit 54
+fi
 install_folder_basename=$(basename "${install_folder_path}")
 
 cp -rv "${win_cdrom}/${install_folder_basename}" "${hdd_mount}/"
