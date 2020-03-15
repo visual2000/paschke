@@ -9,7 +9,7 @@ REM /id Do not check for disk space
 REM /im Do not check for RAM
 REM /is Do not run ScanDisk, starting in Windows
 REM /iq Do not run ScanDisk, starting in DOS
-REM /IW Supposedly to suppress EULA
-REM /IV Supposedly to suppress various dialogs
+REM /IW Supposedly to suppress EULA (Win 98 only?)
+REM /IV Supposedly to suppress various dialogs (Win 98 only?)
 
 SETUP.EXE /C /d /is /IW /IV MSBATCH.INF
