@@ -40,11 +40,11 @@ eject "$dos_boot_mountpoint"
 
 # Grab actual mount points:
 hdd_mount=$(image_mount win95_disk.img) # our fresh HDD image
-win_cdrom=$(image_mount "images/Win95 OSR2.ISO" ro) # The source CD
+win_cdrom=$(image_mount "images/Win98SE.ISO" ro) # The source CD
 
 # Windows ISOs don't always have consistent capitalisation, so maybe
 # it's D:\WIN95, or maybe it's D:\win95 we need...
-install_folder_path=$(find "${win_cdrom}" -iname win95)
+install_folder_path=$(find "${win_cdrom}" -iname win98)
 if [ -z "$install_folder_path" ]; then
     echo "Oh no, can't find Windows install files!  Bailing."
     exit 54
