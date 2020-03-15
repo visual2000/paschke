@@ -31,8 +31,8 @@ Uninstall=0
 VRC=0
 NoPrompt2Boot=1
 [System]
-Display = "VBE Miniport - Standard Graphics Adapter (VGA)"
-; comes from vbemp.inf
+Display="VBE Miniport"
+; Comes from vbemp.inf
 DisplChar=24,1024,768
 ; 16.7 million colors (24-bit) 1024 x 768
 [NameAndOrg]
