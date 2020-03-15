@@ -34,11 +34,11 @@ DevicePath=0
 NoDirWarn=1
 TimeZone="GMT"
 Uninstall=0
-NoPrompt2Boot=1
+NoPrompt2Boot=0 ; This means "do not prompt user". Sigh.
 
 [System]
 Display="VBE Miniport" ; Comes from vbemp.inf
-Monitor="Plug and Play Monitor"
+Monitor="QEMU Monitor"
 DisplChar=24,1024,768 ; 16.7 million colors (24-bit) 1024 x 768
 Locale=L0409
 SelectedKeyboard=KEYBOARD_00000409
