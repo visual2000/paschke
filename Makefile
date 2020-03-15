@@ -17,7 +17,7 @@ build:
 	./paschke-build.sh
 
 .PHONY: boot
-boot: win95_disk.img
+boot: $(DISK)
 	qemu-system-i386 \
 	    -drive file=$<,format=raw \
 	    -cpu pentium \
