@@ -8,6 +8,11 @@ source ./lib/mount.sh
 
 echo "Welcome to Paschke.  We'll try and build a Windows 95 image here."
 
+if ! qemu-system-i386 -version | grep -E '4\.[0-9]\.[0-9]$'; then
+    echo "Please make sure you have at least qemu version 4."
+    exit 4
+fi
+
 if [ -f "win95_disk.img" ]; then
     echo "Oops, vdisk already exists."
     exit 3
