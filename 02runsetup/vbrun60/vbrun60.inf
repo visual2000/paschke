@@ -14,6 +14,8 @@ ASYCFILT.DLL,,ASYCFILT.DLL,32;
 STDOLE2.TLB,,STDOLE2.TLB,32;
 MSVBVM60.DLL,,MSVBVM60.DLL,32;
 COMCAT.DLL,,COMCAT.DLL,32;
+MSCOMCTL.OCX,,MSCOMCTL.OCX,32;
+COMCTL32.OCX,,COMCTL32.OCX,32;
 
 [RegisterFiles]
 %11%\OLEAUT32.DLL
@@ -50,6 +52,16 @@ FileVersion=6,0,97,82
 file-win32-x86=thiscab
 RegisterServer=Yes
 FileVersion=4,71,1460,1
+
+[MSCOMCTL.OCX]
+file-win32-x86=thiscab
+RegisterServer=No
+FileVersion=6,1,97,86
+
+[COMCTL32.OCX]
+file-win32-x86=thiscab
+RegisterServer=No
+FileVersion=6,0,81,6
 
 [version]
 signature="$CHICAGO$"
