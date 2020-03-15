@@ -30,7 +30,7 @@ function _linux_mount() {
 	echo "Mounting ${loopback} on ${mountPoint}..." 1>&2
 	sudo mount "${loopback}" "${mountPoint}" $options
 
-    echo "$mountPoint" 
+    echo "$mountPoint"
 }
 
 function image_mount() {
@@ -39,8 +39,8 @@ function image_mount() {
         echo "Cannot find image $1!" 1>&2
         exit 2
     fi
-    
-    if [ "$(uname -s)" = "darwin" ]; then
+
+    if [ "$(uname -s)" = "Darwin" ]; then
 		_macos_mount "$@"
     fi
     if [ "$(uname -s)" = "Linux" ]; then
@@ -67,6 +67,10 @@ function _macos_eject() {
 }
 
 function eject() {
-	_linux_eject "$@"
+    if [ "$(uname -s)" = "Darwin" ]; then
+		_macos_eject "$@"
+    fi
+    if [ "$(uname -s)" = "Linux" ]; then
+		_linux_eject "$@"
+    fi
 }
-
