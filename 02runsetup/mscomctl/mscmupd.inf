@@ -1,0 +1,37 @@
+; INF file for Visual Basic 6.0 Run-time Redist Pack
+
+[DefaultInstall]
+CheckAdminRights=1
+CopyFiles=install.files,install.file
+
+[DestinationDirs]
+install.files=11
+install.file=11
+
+[install.files]
+MSCOMCTL.OCX
+COMCTL32.OCX
+
+[install.file]
+KB896559.TXT
+
+[KB896559.TXT]
+file-win32-x86=thiscab
+
+[MSCOMCTL.OCX]
+file-win32-x86=thiscab
+FileVersion=6,1,97,86
+
+[COMCTL32.OCX]
+file-win32-x86=thiscab
+FileVersion=6,0,81,6
+
+[version]
+signature="$CHICAGO$"
+AdvancedINF=2.5,%BadAdvpackVer%
+
+[SourceDisksNames]
+1="default",,1
+
+[Strings]
+BadAdvpackVer="This setup requires a newer version of the Setup API"
