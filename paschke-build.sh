@@ -59,6 +59,9 @@ cp -v  "./02runsetup/vga_driver/VBEMP.DRV" "${hdd_mount}/${install_folder_basena
 cp -v  "./02runsetup/vga_driver/vbemp.inf" "${hdd_mount}/${install_folder_basename}/"
 cp -rv "./02runsetup/mscomctl" "${hdd_mount}/"
 cp -rv "./02runsetup/vbrun60" "${hdd_mount}/"
+cp -v "$HOME/Public/Conway/Conway.exe" "${hdd_mount}/"
+cp -v "$HOME/Public/DadaCards/DadaCards.exe" "${hdd_mount}/"
+cp -v "$HOME/Public/2048/2048.exe" "${hdd_mount}/"
 
 eject "${win_cdrom}"
 eject "${hdd_mount}"
