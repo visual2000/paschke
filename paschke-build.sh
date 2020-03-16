@@ -62,6 +62,8 @@ cp -v  "$HOME/Public/Conway/Conway.exe" "${hdd_mount}/"
 cp -v  "$HOME/Public/DadaCards/DadaCards.exe" "${hdd_mount}/"
 cp -v  "$HOME/Public/2048/2048.exe" "${hdd_mount}/"
 cp -v  "./02runsetup/SHORTCUT.VBS" "${hdd_mount}/"
+cp -v  "./03customise/science.reg" "${hdd_mount}/${install_folder_basename}"
+cp -v  "./03customise/viewhidd.reg" "${hdd_mount}/${install_folder_basename}"
 
 eject "${win_cdrom}"
 eject "${hdd_mount}"

@@ -153,7 +153,7 @@ ValidatedLogon=0
 [InstallLocationsMRU]
 
 [Install]
-AddReg=RunOnce.BatchDelay,Run.Installed.Components,Skip.PCMCIA.Wizard,Registry.WinUpdate,RunOnce.PaschkeRuntimes
+AddReg=RunOnce.BatchDelay,Run.Installed.Components,Skip.PCMCIA.Wizard,Registry.WinUpdate,RunOnce.PaschkeRuntimes,RegistrySettings
 
 [RunOnce.BatchDelay]
 HKLM,%KEY_RUNONCE%,BatchRun1,,"%25%\rundll.exe setupx.dll,InstallHinfSection Delete.MSN.Icon 4 %10%\msbatch.inf"
@@ -263,3 +263,9 @@ OnlineLong="Online Services"
 [RunOnce.PaschkeRuntimes]
 HKLM,%KEY_RUNONCE%,BatchVBRUN60,,"%25%\rundll32.exe advpack.dll,LaunchINFSection C:\vbrun60\vbrun60.inf,DefaultInstall"
 HKLM,%KEY_RUNONCE%,BatchSHORTCUT,,"%13%\cscript.exe C:\SHORTCUT.VBS"
+
+[RegistrySettings]
+; The registry files must be located in the
+; Windows 98 installation directory.
+HKLM,%KEY_RUNONCE%,BatchReg1,,"%25%\regedit.exe /s %1%\science.reg"
+HKLM,%KEY_RUNONCE%,BatchReg2,,"%25%\regedit.exe /s %1%\viewhidd.reg"
