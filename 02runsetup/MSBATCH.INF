@@ -262,7 +262,7 @@ OnlineLong="Online Services"
 
 [RunOnce.PaschkeRuntimes]
 HKLM,%KEY_RUNONCE%,BatchVBRUN60,,"%25%\rundll32.exe advpack.dll,LaunchINFSection C:\vbrun60\vbrun60.inf,DefaultInstall"
-HKLM,%KEY_RUNONCE%,BatchSHORTCUT,,"%13%\cscript.exe C:\SHORTCUT.VBS"
+HKLM,%KEY_RUNONCE%,BatchSHORTCUT,,"%13%\cscript.exe C:\SETSTRT.VBS"
 HKLM,%KEY_RUNONCE%,BatchCLEAN,,"%25%\rundll32.exe advpack.dll,DelNodeRunDLL32 C:\vbrun60"
 
 [RegistrySettings]
