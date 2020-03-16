@@ -156,15 +156,15 @@ ValidatedLogon=0
 AddReg=RunOnce.BatchDelay,Run.Installed.Components,Skip.PCMCIA.Wizard,Registry.WinUpdate,RunOnce.PaschkeRuntimes,RegistrySettings
 
 [RunOnce.BatchDelay]
-HKLM,%KEY_RUNONCE%,BatchRun1,,"%25%\rundll.exe setupx.dll,InstallHinfSection Delete.MSN.Icon 4 %10%\msbatch.inf"
-HKLM,%KEY_RUNONCE%,BatchRun2,,"%25%\rundll.exe setupx.dll,InstallHinfSection Delete.Welcome 4 %10%\msbatch.inf"
-HKLM,%KEY_RUNONCE%,BatchRun3,,"%25%\rundll.exe setupx.dll,InstallHinfSection Delete.Regwiz 4 %10%\msbatch.inf"
+HKLM,%KEY_RUNONCE%,BatchRun1,,"%25%\rundll.exe setupx.dll,InstallHinfSection Delete.MSN.Icon 4 %1%\msbatch.inf"
+HKLM,%KEY_RUNONCE%,BatchRun2,,"%25%\rundll.exe setupx.dll,InstallHinfSection Delete.Welcome 4 %1%\msbatch.inf"
+HKLM,%KEY_RUNONCE%,BatchRun3,,"%25%\rundll.exe setupx.dll,InstallHinfSection Delete.Regwiz 4 %1%\msbatch.inf"
 
 [Run.Installed.Components]
 HKLM,%KEY_INSTALLEDCOMPS%\>BatchSetupx,,,">Batch 98 - General Settings"
 HKLM,%KEY_INSTALLEDCOMPS%\>BatchSetupx,IsInstalled,1,01,00,00,00
 HKLM,%KEY_INSTALLEDCOMPS%\>BatchSetupx,Version,,"3,0,0,0"
-HKLM,%KEY_INSTALLEDCOMPS%\>BatchSetupx,StubPath,,"%25%\rundll.exe setupx.dll,InstallHinfSection Installed.Components.General 4 %10%\msbatch.inf"
+HKLM,%KEY_INSTALLEDCOMPS%\>BatchSetupx,StubPath,,"%25%\rundll.exe setupx.dll,InstallHinfSection Installed.Components.General 4 %1%\MSBATCH.INF"
 HKLM,%KEY_INSTALLEDCOMPS%\BatchSetupx,,,"ICW"
 HKLM,%KEY_INSTALLEDCOMPS%\BatchSetupx,IsInstalled,1,01,00,00,00
 HKLM,%KEY_INSTALLEDCOMPS%\BatchSetupx,Version,,"3,0,0,0"
@@ -172,7 +172,7 @@ HKLM,%KEY_INSTALLEDCOMPS%\BatchSetupx,StubPath,,"%24%\progra~1\intern~1\connec~1
 HKLM,%KEY_INSTALLEDCOMPS%\>BatchAdvpack,,,">Batch 98 - Advanced Settings"
 HKLM,%KEY_INSTALLEDCOMPS%\>BatchAdvpack,IsInstalled,1,01,00,00,00
 HKLM,%KEY_INSTALLEDCOMPS%\>BatchAdvpack,Version,,"3,0,0,0"
-HKLM,%KEY_INSTALLEDCOMPS%\>BatchAdvpack,StubPath,,"%25%\rundll32.exe advpack.dll,LaunchINFSection %10%\msbatch.inf,Installed.Components.Advanced"
+HKLM,%KEY_INSTALLEDCOMPS%\>BatchAdvpack,StubPath,,"%25%\rundll32.exe advpack.dll,LaunchINFSection %1%\MSBATCH.INF,Installed.Components.Advanced"
 HKLM,%KEY_INSTALLEDCOMPS%\>Batchwu,,,">Batch 98 - Windows Update"
 HKLM,%KEY_INSTALLEDCOMPS%\>Batchwu,IsInstalled,1,01,00,00,00
 HKLM,%KEY_INSTALLEDCOMPS%\>Batchwu,Version,,"3,0,0,0"
