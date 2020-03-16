@@ -1,0 +1,385 @@
+REGEDIT4
+
+[HKEY_CURRENT_USER\Control Panel\Desktop]
+"Pattern"="(None)"
+
+[HKEY_CURRENT_USER\Control Panel\Desktop\WindowMetrics]
+"ScrollWidth"="-195"
+
+[HKEY_CURRENT_USER\Control Panel\Desktop\WindowMetrics]
+"ScrollHeight"="-195"
+
+[HKEY_CURRENT_USER\Control Panel\Desktop\WindowMetrics]
+"CaptionWidth"="-270"
+
+[HKEY_CURRENT_USER\Control Panel\Desktop\WindowMetrics]
+"CaptionHeight"="-270"
+
+[HKEY_CURRENT_USER\Control Panel\Desktop\WindowMetrics]
+"SmCaptionWidth"="-240"
+
+[HKEY_CURRENT_USER\Control Panel\Desktop\WindowMetrics]
+"SmCaptionHeight"="-240"
+
+[HKEY_CURRENT_USER\Control Panel\Desktop\WindowMetrics]
+"CaptionFont"=hex:08,00,00,00,00,00,00,00,bc,02,00,00,00,00,00,00,00,00,4c,75,63,69,64,61,20,53,61,6e,73,20,55,6e,69,63,6f,64,65,00,47,c1,28,ed,64,00,0e,a1,f7,bf,0f,e3,
+
+[HKEY_CURRENT_USER\Control Panel\Desktop\WindowMetrics]
+"SmCaptionFont"=hex:07,00,00,00,00,00,00,00,bc,02,00,00,00,00,00,00,00,00,4c,75,63,69,64,61,20,53,61,6e,73,20,55,6e,69,63,6f,64,65,00,47,c1,28,ed,64,00,0e,a1,f7,bf,0f,e3,
+
+[HKEY_CURRENT_USER\Control Panel\Desktop\WindowMetrics]
+"MenuFont"=hex:08,00,00,00,00,00,00,00,90,01,00,00,00,00,00,00,00,00,4c,75,63,69,64,61,20,53,61,6e,73,20,55,6e,69,63,6f,64,65,00,47,c1,28,ed,64,00,0e,a1,f7,bf,0f,e3,
+
+[HKEY_CURRENT_USER\Control Panel\Desktop\WindowMetrics]
+"StatusFont"=hex:08,00,00,00,00,00,00,00,90,01,00,00,00,00,00,00,00,00,4c,75,63,69,64,61,20,53,61,6e,73,20,55,6e,69,63,6f,64,65,00,47,c1,28,ed,64,00,0e,a1,f7,bf,0f,e3,
+
+[HKEY_CURRENT_USER\Control Panel\Desktop\WindowMetrics]
+"MessageFont"=hex:08,00,00,00,00,00,00,00,90,01,00,00,00,00,00,00,00,00,4d,53,20,53,61,6e,73,20,53,65,72,69,66,00,7c,00,00,00,a0,56,47,c1,28,ed,64,00,0e,a1,f7,bf,0f,e3,
+
+[HKEY_CURRENT_USER\Control Panel\Desktop\WindowMetrics]
+"IconFont"=hex:08,00,00,00,00,00,00,00,90,01,00,00,00,00,00,00,00,00,4c,75,63,69,64,61,20,53,61,6e,73,20,55,6e,69,63,6f,64,65,00,c4,0e,0f,03,08,00,5f,03,6e,82,41,0f,
+
+[HKEY_CURRENT_USER\Control Panel\Cursors]
+"Arrow"="C:\\PROGRAM FILES\\PLUS!\\THEMES\\Science arrow.cur"
+
+[HKEY_CURRENT_USER\Control Panel\Cursors]
+"Help"="C:\\PROGRAM FILES\\PLUS!\\THEMES\\Science help.cur"
+
+[HKEY_CURRENT_USER\Control Panel\Cursors]
+"AppStarting"="C:\\PROGRAM FILES\\PLUS!\\THEMES\\Science wait.ani"
+
+[HKEY_CURRENT_USER\Control Panel\Cursors]
+"Wait"="C:\\PROGRAM FILES\\PLUS!\\THEMES\\Science busy.ani"
+
+[HKEY_CURRENT_USER\Control Panel\Cursors]
+"NWPen"="C:\\PROGRAM FILES\\PLUS!\\THEMES\\Science pen.cur"
+
+[HKEY_CURRENT_USER\Control Panel\Cursors]
+"No"="C:\\PROGRAM FILES\\PLUS!\\THEMES\\Science no.cur"
+
+[HKEY_CURRENT_USER\Control Panel\Cursors]
+"SizeNS"="C:\\PROGRAM FILES\\PLUS!\\THEMES\\Science Size NS.cur"
+
+[HKEY_CURRENT_USER\Control Panel\Cursors]
+"SizeWE"="C:\\PROGRAM FILES\\PLUS!\\THEMES\\Science Size WE.cur"
+
+[HKEY_CURRENT_USER\Control Panel\Cursors]
+"Crosshair"="C:\\PROGRAM FILES\\PLUS!\\THEMES\\Science cross.cur"
+
+[HKEY_CURRENT_USER\Control Panel\Cursors]
+"IBeam"="C:\\PROGRAM FILES\\PLUS!\\THEMES\\Science beam.cur"
+
+[HKEY_CURRENT_USER\Control Panel\Cursors]
+"SizeNWSE"="C:\\PROGRAM FILES\\PLUS!\\THEMES\\Science Size NWSE.cur"
+
+[HKEY_CURRENT_USER\Control Panel\Cursors]
+"SizeNESW"="C:\\PROGRAM FILES\\PLUS!\\THEMES\\Science Size NESW.cur"
+
+[HKEY_CURRENT_USER\Control Panel\Cursors]
+"SizeAll"="C:\\PROGRAM FILES\\PLUS!\\THEMES\\Science move.cur"
+
+[HKEY_CURRENT_USER\Control Panel\Cursors]
+"UpArrow"="C:\\PROGRAM FILES\\PLUS!\\THEMES\\Science up.cur"
+
+[HKEY_CURRENT_USER\Control Panel\Colors]
+"ActiveTitle"="0 128 128"
+
+[HKEY_CURRENT_USER\Control Panel\Colors]
+"Background"="79 101 125"
+
+[HKEY_CURRENT_USER\Control Panel\Colors]
+"Hilight"="0 128 128"
+
+[HKEY_CURRENT_USER\Control Panel\Colors]
+"Scrollbar"="193 204 217"
+
+[HKEY_CURRENT_USER\Control Panel\Colors]
+"InactiveTitle"="160 160 164"
+
+[HKEY_CURRENT_USER\Control Panel\Colors]
+"Menu"="131 153 177"
+
+[HKEY_CURRENT_USER\Control Panel\Colors]
+"ActiveBorder"="131 153 177"
+
+[HKEY_CURRENT_USER\Control Panel\Colors]
+"InactiveBorder"="131 153 177"
+
+[HKEY_CURRENT_USER\Control Panel\Colors]
+"AppWorkspace"="128 128 128"
+
+[HKEY_CURRENT_USER\Control Panel\Colors]
+"ButtonFace"="131 153 177"
+
+[HKEY_CURRENT_USER\Control Panel\Colors]
+"ButtonShadow"="79 101 125"
+
+[HKEY_CURRENT_USER\Control Panel\Colors]
+"GrayText"="79 101 125"
+
+[HKEY_CURRENT_USER\Control Panel\Colors]
+"InactiveTitleText"="193 204 217"
+
+[HKEY_CURRENT_USER\Control Panel\Colors]
+"ButtonHilight"="193 204 217"
+
+[HKEY_CURRENT_USER\Control Panel\Colors]
+"ButtonLight"="131 153 177"
+
+[HKEY_CURRENT_USER\Control Panel\Colors]
+"InfoWindow"="193 204 217"
+
+[HKEY_CURRENT_USER\Software\Classes\CLSID\{20D04FE0-3AEA-1069-A2D8-08002B30309D}\DefaultIcon]
+@="C:\\PROGRAM FILES\\PLUS!\\THEMES\\Science My Computer.ico"
+
+[HKEY_CURRENT_USER\Software\Classes\CLSID\{208D2C60-3AEA-1069-A2D7-08002B30309D}\DefaultIcon]
+@="C:\\PROGRAM FILES\\PLUS!\\THEMES\\Science Network Neighborhood.ico"
+
+[HKEY_CURRENT_USER\Software\Classes\CLSID\{645FF040-5081-101B-9F08-00AA002F954E}\DefaultIcon]
+"full"="C:\\PROGRAM FILES\\PLUS!\\THEMES\\Science Recycle Full.ico,0"
+
+[HKEY_CURRENT_USER\Software\Classes\CLSID\{645FF040-5081-101B-9F08-00AA002F954E}\DefaultIcon]
+"empty"="C:\\PROGRAM FILES\\PLUS!\\THEMES\\Science Recycle Empty.ico,0"
+
+[HKEY_CURRENT_USER\Software\Classes\CLSID\{645FF040-5081-101B-9F08-00AA002F954E}\DefaultIcon]
+@="C:\\PROGRAM FILES\\PLUS!\\THEMES\\Science Recycle Empty.ico,0"
+
+[HKEY_CURRENT_USER\AppEvents\Schemes\Apps\.Default\SystemStart\.Current]
+@="C:\\PROGRAM FILES\\PLUS!\\THEMES\\Science startup.wav"
+
+[HKEY_CURRENT_USER\AppEvents\Schemes\Apps\.Default\.Default\.Current]
+@="C:\\PROGRAM FILES\\PLUS!\\THEMES\\Science default sound.wav"
+
+[HKEY_CURRENT_USER\AppEvents\Schemes\Apps\.Default\SystemExit\.Current]
+@="C:\\PROGRAM FILES\\PLUS!\\THEMES\\Science exit windows.wav"
+
+[HKEY_CURRENT_USER\AppEvents\Schemes\Apps\.Default\SystemHand\.Current]
+@="C:\\PROGRAM FILES\\PLUS!\\THEMES\\Science critical stop.wav"
+
+[HKEY_CURRENT_USER\AppEvents\Schemes\Apps\.Default\SystemQuestion\.Current]
+@="C:\\PROGRAM FILES\\PLUS!\\THEMES\\Science question.wav"
+
+[HKEY_CURRENT_USER\AppEvents\Schemes\Apps\.Default\SystemExclamation\.Current]
+@="C:\\PROGRAM FILES\\PLUS!\\THEMES\\Science exclamation.wav"
+
+[HKEY_CURRENT_USER\AppEvents\Schemes\Apps\.Default\SystemAsterisk\.Current]
+@="C:\\PROGRAM FILES\\PLUS!\\THEMES\\Science asterisk.wav"
+
+[HKEY_CURRENT_USER\AppEvents\Schemes\Apps\.Default\Maximize\.Current]
+@="C:\\PROGRAM FILES\\PLUS!\\THEMES\\Science maximize.wav"
+
+[HKEY_CURRENT_USER\AppEvents\Schemes\Apps\.Default\Minimize\.Current]
+@="C:\\PROGRAM FILES\\PLUS!\\THEMES\\Science minimize.wav"
+
+[HKEY_CURRENT_USER\AppEvents\Schemes\Apps\.Default\RestoreDown\.Current]
+@="C:\\PROGRAM FILES\\PLUS!\\THEMES\\Science minimize.wav"
+
+[HKEY_CURRENT_USER\AppEvents\Schemes\Apps\.Default\RestoreUp\.Current]
+@="C:\\PROGRAM FILES\\PLUS!\\THEMES\\Science maximize.wav"
+
+[HKEY_CURRENT_USER\AppEvents\Schemes\Apps\.Default\AppGPFault\.Current]
+@="C:\\PROGRAM FILES\\PLUS!\\THEMES\\Science program error.wav"
+
+[HKEY_CURRENT_USER\AppEvents\Schemes\Apps\.Default\MenuCommand\.Current]
+@="C:\\PROGRAM FILES\\PLUS!\\THEMES\\Science menu command.wav"
+
+[HKEY_CURRENT_USER\AppEvents\Schemes\Apps\.Default\MenuPopup\.Current]
+@="C:\\PROGRAM FILES\\PLUS!\\THEMES\\Science menu popup.wav"
+
+[HKEY_CURRENT_USER\AppEvents\Schemes\Apps\.Default\SystemDefault\.Current]
+@="C:\\PROGRAM FILES\\PLUS!\\THEMES\\Science beep.wav"
+
+[HKEY_CURRENT_USER\AppEvents\Schemes\Apps\Explorer\EmptyRecycleBin\.Current]
+@="C:\\PROGRAM FILES\\PLUS!\\THEMES\\Science empty recycle bin.wav"
+
+[HKEY_USERS\.DEFAULT\Control Panel\Desktop]
+"Pattern"="(None)"
+
+[HKEY_USERS\.DEFAULT\Control Panel\Desktop\WindowMetrics]
+"ScrollWidth"="-195"
+
+[HKEY_USERS\.DEFAULT\Control Panel\Desktop\WindowMetrics]
+"ScrollHeight"="-195"
+
+[HKEY_USERS\.DEFAULT\Control Panel\Desktop\WindowMetrics]
+"CaptionWidth"="-270"
+
+[HKEY_USERS\.DEFAULT\Control Panel\Desktop\WindowMetrics]
+"CaptionHeight"="-270"
+
+[HKEY_USERS\.DEFAULT\Control Panel\Desktop\WindowMetrics]
+"SmCaptionWidth"="-240"
+
+[HKEY_USERS\.DEFAULT\Control Panel\Desktop\WindowMetrics]
+"SmCaptionHeight"="-240"
+
+[HKEY_USERS\.DEFAULT\Control Panel\Desktop\WindowMetrics]
+"CaptionFont"=hex:08,00,00,00,00,00,00,00,bc,02,00,00,00,00,00,00,00,00,4c,75,63,69,64,61,20,53,61,6e,73,20,55,6e,69,63,6f,64,65,00,47,c1,28,ed,64,00,0e,a1,f7,bf,0f,e3,
+
+[HKEY_USERS\.DEFAULT\Control Panel\Desktop\WindowMetrics]
+"SmCaptionFont"=hex:07,00,00,00,00,00,00,00,bc,02,00,00,00,00,00,00,00,00,4c,75,63,69,64,61,20,53,61,6e,73,20,55,6e,69,63,6f,64,65,00,47,c1,28,ed,64,00,0e,a1,f7,bf,0f,e3,
+
+[HKEY_USERS\.DEFAULT\Control Panel\Desktop\WindowMetrics]
+"MenuFont"=hex:08,00,00,00,00,00,00,00,90,01,00,00,00,00,00,00,00,00,4c,75,63,69,64,61,20,53,61,6e,73,20,55,6e,69,63,6f,64,65,00,47,c1,28,ed,64,00,0e,a1,f7,bf,0f,e3,
+
+[HKEY_USERS\.DEFAULT\Control Panel\Desktop\WindowMetrics]
+"StatusFont"=hex:08,00,00,00,00,00,00,00,90,01,00,00,00,00,00,00,00,00,4c,75,63,69,64,61,20,53,61,6e,73,20,55,6e,69,63,6f,64,65,00,47,c1,28,ed,64,00,0e,a1,f7,bf,0f,e3,
+
+[HKEY_USERS\.DEFAULT\Control Panel\Desktop\WindowMetrics]
+"MessageFont"=hex:08,00,00,00,00,00,00,00,90,01,00,00,00,00,00,00,00,00,4d,53,20,53,61,6e,73,20,53,65,72,69,66,00,7c,00,00,00,a0,56,47,c1,28,ed,64,00,0e,a1,f7,bf,0f,e3,
+
+[HKEY_USERS\.DEFAULT\Control Panel\Desktop\WindowMetrics]
+"IconFont"=hex:08,00,00,00,00,00,00,00,90,01,00,00,00,00,00,00,00,00,4c,75,63,69,64,61,20,53,61,6e,73,20,55,6e,69,63,6f,64,65,00,c4,0e,0f,03,08,00,5f,03,6e,82,41,0f,
+
+[HKEY_USERS\.DEFAULT\Control Panel\Cursors]
+"Arrow"="C:\\PROGRAM FILES\\PLUS!\\THEMES\\Science arrow.cur"
+
+[HKEY_USERS\.DEFAULT\Control Panel\Cursors]
+"Help"="C:\\PROGRAM FILES\\PLUS!\\THEMES\\Science help.cur"
+
+[HKEY_USERS\.DEFAULT\Control Panel\Cursors]
+"AppStarting"="C:\\PROGRAM FILES\\PLUS!\\THEMES\\Science wait.ani"
+
+[HKEY_USERS\.DEFAULT\Control Panel\Cursors]
+"Wait"="C:\\PROGRAM FILES\\PLUS!\\THEMES\\Science busy.ani"
+
+[HKEY_USERS\.DEFAULT\Control Panel\Cursors]
+"NWPen"="C:\\PROGRAM FILES\\PLUS!\\THEMES\\Science pen.cur"
+
+[HKEY_USERS\.DEFAULT\Control Panel\Cursors]
+"No"="C:\\PROGRAM FILES\\PLUS!\\THEMES\\Science no.cur"
+
+[HKEY_USERS\.DEFAULT\Control Panel\Cursors]
+"SizeNS"="C:\\PROGRAM FILES\\PLUS!\\THEMES\\Science Size NS.cur"
+
+[HKEY_USERS\.DEFAULT\Control Panel\Cursors]
+"SizeWE"="C:\\PROGRAM FILES\\PLUS!\\THEMES\\Science Size WE.cur"
+
+[HKEY_USERS\.DEFAULT\Control Panel\Cursors]
+"Crosshair"="C:\\PROGRAM FILES\\PLUS!\\THEMES\\Science cross.cur"
+
+[HKEY_USERS\.DEFAULT\Control Panel\Cursors]
+"IBeam"="C:\\PROGRAM FILES\\PLUS!\\THEMES\\Science beam.cur"
+
+[HKEY_USERS\.DEFAULT\Control Panel\Cursors]
+"SizeNWSE"="C:\\PROGRAM FILES\\PLUS!\\THEMES\\Science Size NWSE.cur"
+
+[HKEY_USERS\.DEFAULT\Control Panel\Cursors]
+"SizeNESW"="C:\\PROGRAM FILES\\PLUS!\\THEMES\\Science Size NESW.cur"
+
+[HKEY_USERS\.DEFAULT\Control Panel\Cursors]
+"SizeAll"="C:\\PROGRAM FILES\\PLUS!\\THEMES\\Science move.cur"
+
+[HKEY_USERS\.DEFAULT\Control Panel\Cursors]
+"UpArrow"="C:\\PROGRAM FILES\\PLUS!\\THEMES\\Science up.cur"
+
+[HKEY_USERS\.DEFAULT\Control Panel\Colors]
+"ActiveTitle"="0 128 128"
+
+[HKEY_USERS\.DEFAULT\Control Panel\Colors]
+"Background"="79 101 125"
+
+[HKEY_USERS\.DEFAULT\Control Panel\Colors]
+"Hilight"="0 128 128"
+
+[HKEY_USERS\.DEFAULT\Control Panel\Colors]
+"Scrollbar"="193 204 217"
+
+[HKEY_USERS\.DEFAULT\Control Panel\Colors]
+"InactiveTitle"="160 160 164"
+
+[HKEY_USERS\.DEFAULT\Control Panel\Colors]
+"Menu"="131 153 177"
+
+[HKEY_USERS\.DEFAULT\Control Panel\Colors]
+"ActiveBorder"="131 153 177"
+
+[HKEY_USERS\.DEFAULT\Control Panel\Colors]
+"InactiveBorder"="131 153 177"
+
+[HKEY_USERS\.DEFAULT\Control Panel\Colors]
+"AppWorkspace"="128 128 128"
+
+[HKEY_USERS\.DEFAULT\Control Panel\Colors]
+"ButtonFace"="131 153 177"
+
+[HKEY_USERS\.DEFAULT\Control Panel\Colors]
+"ButtonShadow"="79 101 125"
+
+[HKEY_USERS\.DEFAULT\Control Panel\Colors]
+"GrayText"="79 101 125"
+
+[HKEY_USERS\.DEFAULT\Control Panel\Colors]
+"InactiveTitleText"="193 204 217"
+
+[HKEY_USERS\.DEFAULT\Control Panel\Colors]
+"ButtonHilight"="193 204 217"
+
+[HKEY_USERS\.DEFAULT\Control Panel\Colors]
+"ButtonLight"="131 153 177"
+
+[HKEY_USERS\.DEFAULT\Control Panel\Colors]
+"InfoWindow"="193 204 217"
+
+[HKEY_USERS\.DEFAULT\Software\Classes\CLSID\{20D04FE0-3AEA-1069-A2D8-08002B30309D}\DefaultIcon]
+@="C:\\PROGRAM FILES\\PLUS!\\THEMES\\Science My Computer.ico"
+
+[HKEY_USERS\.DEFAULT\Software\Classes\CLSID\{208D2C60-3AEA-1069-A2D7-08002B30309D}\DefaultIcon]
+@="C:\\PROGRAM FILES\\PLUS!\\THEMES\\Science Network Neighborhood.ico"
+
+[HKEY_USERS\.DEFAULT\Software\Classes\CLSID\{645FF040-5081-101B-9F08-00AA002F954E}\DefaultIcon]
+"full"="C:\\PROGRAM FILES\\PLUS!\\THEMES\\Science Recycle Full.ico,0"
+
+[HKEY_USERS\.DEFAULT\Software\Classes\CLSID\{645FF040-5081-101B-9F08-00AA002F954E}\DefaultIcon]
+"empty"="C:\\PROGRAM FILES\\PLUS!\\THEMES\\Science Recycle Empty.ico,0"
+
+[HKEY_USERS\.DEFAULT\Software\Classes\CLSID\{645FF040-5081-101B-9F08-00AA002F954E}\DefaultIcon]
+@="C:\\PROGRAM FILES\\PLUS!\\THEMES\\Science Recycle Empty.ico,0"
+
+[HKEY_USERS\.DEFAULT\AppEvents\Schemes\Apps\.Default\SystemStart\.Current]
+@="C:\\PROGRAM FILES\\PLUS!\\THEMES\\Science startup.wav"
+
+[HKEY_USERS\.DEFAULT\AppEvents\Schemes\Apps\.Default\.Default\.Current]
+@="C:\\PROGRAM FILES\\PLUS!\\THEMES\\Science default sound.wav"
+
+[HKEY_USERS\.DEFAULT\AppEvents\Schemes\Apps\.Default\SystemExit\.Current]
+@="C:\\PROGRAM FILES\\PLUS!\\THEMES\\Science exit windows.wav"
+
+[HKEY_USERS\.DEFAULT\AppEvents\Schemes\Apps\.Default\SystemHand\.Current]
+@="C:\\PROGRAM FILES\\PLUS!\\THEMES\\Science critical stop.wav"
+
+[HKEY_USERS\.DEFAULT\AppEvents\Schemes\Apps\.Default\SystemQuestion\.Current]
+@="C:\\PROGRAM FILES\\PLUS!\\THEMES\\Science question.wav"
+
+[HKEY_USERS\.DEFAULT\AppEvents\Schemes\Apps\.Default\SystemExclamation\.Current]
+@="C:\\PROGRAM FILES\\PLUS!\\THEMES\\Science exclamation.wav"
+
+[HKEY_USERS\.DEFAULT\AppEvents\Schemes\Apps\.Default\SystemAsterisk\.Current]
+@="C:\\PROGRAM FILES\\PLUS!\\THEMES\\Science asterisk.wav"
+
+[HKEY_USERS\.DEFAULT\AppEvents\Schemes\Apps\.Default\Maximize\.Current]
+@="C:\\PROGRAM FILES\\PLUS!\\THEMES\\Science maximize.wav"
+
+[HKEY_USERS\.DEFAULT\AppEvents\Schemes\Apps\.Default\Minimize\.Current]
+@="C:\\PROGRAM FILES\\PLUS!\\THEMES\\Science minimize.wav"
+
+[HKEY_USERS\.DEFAULT\AppEvents\Schemes\Apps\.Default\RestoreDown\.Current]
+@="C:\\PROGRAM FILES\\PLUS!\\THEMES\\Science minimize.wav"
+
+[HKEY_USERS\.DEFAULT\AppEvents\Schemes\Apps\.Default\RestoreUp\.Current]
+@="C:\\PROGRAM FILES\\PLUS!\\THEMES\\Science maximize.wav"
+
+[HKEY_USERS\.DEFAULT\AppEvents\Schemes\Apps\.Default\AppGPFault\.Current]
+@="C:\\PROGRAM FILES\\PLUS!\\THEMES\\Science program error.wav"
+
+[HKEY_USERS\.DEFAULT\AppEvents\Schemes\Apps\.Default\MenuCommand\.Current]
+@="C:\\PROGRAM FILES\\PLUS!\\THEMES\\Science menu command.wav"
+
+[HKEY_USERS\.DEFAULT\AppEvents\Schemes\Apps\.Default\MenuPopup\.Current]
+@="C:\\PROGRAM FILES\\PLUS!\\THEMES\\Science menu popup.wav"
+
+[HKEY_USERS\.DEFAULT\AppEvents\Schemes\Apps\.Default\SystemDefault\.Current]
+@="C:\\PROGRAM FILES\\PLUS!\\THEMES\\Science beep.wav"
+
+[HKEY_USERS\.DEFAULT\AppEvents\Schemes\Apps\Explorer\EmptyRecycleBin\.Current]
+@="C:\\PROGRAM FILES\\PLUS!\\THEMES\\Science empty recycle bin.wav"
