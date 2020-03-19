@@ -1,37 +1,79 @@
 REGEDIT4
 
 [HKEY_CURRENT_USER\Control Panel\Desktop]
-"Wallpaper"="C:\\sci.bmp"
-
-[HKEY_CURRENT_USER\Control Panel\Desktop]
-"TileWallpaper"="0"
+"wallpaper"="C:\\Sci.bmp"
 
 [HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Desktop\General]
-"TileWallpaper"="0"
+"Wallpaper"="C:\\Sci.bmp"
 
 [HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Desktop\General]
-"Wallpaper"="C:\\sci.bmp"
+"BackupWallpaper"="C:\\Sci.bmp"
 
 [HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Desktop\General]
-"BackupWallpaper"="C:\\sci.bmp"
+"WallpaperFileTime"=hex:00,f4,cb,5e,24,fe,d5,01,
 
-[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Desktop\General]
-"WallpaperFileTime"=hex:00,a3,8a,ab,76,fb,d5,01,
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Desktop\Components]
+"GeneralFlags"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Desktop\Components\0]
+"Source"=""
+
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Desktop\Components\0]
+"SubscribedURL"=""
+
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Desktop\Components\0]
+"FriendlyName"=""
+
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Desktop\Components\0]
+"Flags"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Desktop\Components\0]
+"Position"=hex:2c,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,
+
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Desktop\Components\0]
+"CurrentState"=dword:00000001
+
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Desktop\Components\0]
+"OriginalStateInfo"=hex:18,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,01,00,00,00,
+
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Desktop\Components\0]
+"RestoredStateInfo"=hex:18,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,01,00,00,00,
 
 [HKEY_USERS\.DEFAULT\Control Panel\Desktop]
-"Wallpaper"="C:\\sci.bmp"
-
-[HKEY_USERS\.DEFAULT\Control Panel\Desktop]
-"TileWallpaper"="0"
+"wallpaper"="C:\\Sci.bmp"
 
 [HKEY_USERS\.DEFAULT\Software\Microsoft\Internet Explorer\Desktop\General]
-"TileWallpaper"="0"
+"Wallpaper"="C:\\Sci.bmp"
 
 [HKEY_USERS\.DEFAULT\Software\Microsoft\Internet Explorer\Desktop\General]
-"Wallpaper"="C:\\sci.bmp"
+"BackupWallpaper"="C:\\Sci.bmp"
 
 [HKEY_USERS\.DEFAULT\Software\Microsoft\Internet Explorer\Desktop\General]
-"BackupWallpaper"="C:\\sci.bmp"
+"WallpaperFileTime"=hex:00,f4,cb,5e,24,fe,d5,01,
 
-[HKEY_USERS\.DEFAULT\Software\Microsoft\Internet Explorer\Desktop\General]
-"WallpaperFileTime"=hex:00,a3,8a,ab,76,fb,d5,01,
+[HKEY_USERS\.DEFAULT\Software\Microsoft\Internet Explorer\Desktop\Components]
+"GeneralFlags"=dword:00000000
+
+[HKEY_USERS\.DEFAULT\Software\Microsoft\Internet Explorer\Desktop\Components\0]
+"Source"=""
+
+[HKEY_USERS\.DEFAULT\Software\Microsoft\Internet Explorer\Desktop\Components\0]
+"SubscribedURL"=""
+
+[HKEY_USERS\.DEFAULT\Software\Microsoft\Internet Explorer\Desktop\Components\0]
+"FriendlyName"=""
+
+[HKEY_USERS\.DEFAULT\Software\Microsoft\Internet Explorer\Desktop\Components\0]
+"Flags"=dword:00000000
+
+[HKEY_USERS\.DEFAULT\Software\Microsoft\Internet Explorer\Desktop\Components\0]
+"Position"=hex:2c,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,
+
+[HKEY_USERS\.DEFAULT\Software\Microsoft\Internet Explorer\Desktop\Components\0]
+"CurrentState"=dword:00000001
+
+[HKEY_USERS\.DEFAULT\Software\Microsoft\Internet Explorer\Desktop\Components\0]
+"OriginalStateInfo"=hex:18,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,01,00,00,00,
+
+[HKEY_USERS\.DEFAULT\Software\Microsoft\Internet Explorer\Desktop\Components\0]
+"RestoredStateInfo"=hex:18,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,01,00,00,00,
