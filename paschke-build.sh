@@ -83,15 +83,7 @@ qemu-system-i386 -drive file=win95_disk.img,format=raw \
                  -drive file=images/win95b-boot.img,format=raw,index=0,if=floppy \
                  -nic none
 
-# Proposed steps:
-
-
 # Wishlist:
-# - remote administration of reg keys??
-# - get really good at writing PIF/BAT files?
 # - somehow know when it's done?  wait for it to open a port????
-
-# - VGA drivers.
-# - maybe only ask for 16 colour / 640x480 in MSBATCH.INF
 
 # - TODO bash working directories.
