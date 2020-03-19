@@ -66,7 +66,7 @@ cp -v  "./02runsetup/UPD_DESK.VBS" "${hdd_mount}/"
 cp -v  "./02runsetup/SETSTRT.VBS" "${hdd_mount}/"
 cp -v  "./03customise/science.reg" "${hdd_mount}/${install_folder_basename}"
 cp -v  "./03customise/viewhidd.reg" "${hdd_mount}/${install_folder_basename}"
-cp -v  "./03customise/wallpapr.reg" "${hdd_mount}/${install_folder_basename}"
+cp -v  "./03customise/paper.exe" "${hdd_mount}/"
 cp -v  "./03customise/sci.bmp" "${hdd_mount}/"
 
 eject "${win_cdrom}"
