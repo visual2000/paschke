@@ -22,7 +22,7 @@ boot: $(DISK)
 	qemu-system-i386 \
 	    -drive file=$<,format=raw \
 	    -cpu pentium \
-	    -m 100 \
+	    -m 256 \
 	    -boot c \
 	    -vga std \
 	    -nic none

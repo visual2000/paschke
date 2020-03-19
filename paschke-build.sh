@@ -77,7 +77,7 @@ echo "Starting Windows setup run..."
 
 qemu-system-i386 -drive file=win95_disk.img,format=raw \
                  -cpu pentium \
-                 -m 100 \
+                 -m 256 \
                  -boot order=ca,once=a \
                  -vga std \
                  -drive file=images/win95b-boot.img,format=raw,index=0,if=floppy \
