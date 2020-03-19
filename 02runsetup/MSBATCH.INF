@@ -154,6 +154,7 @@ ValidatedLogon=0
 
 [Install]
 AddReg=RunOnce.BatchDelay,Run.Installed.Components,Skip.PCMCIA.Wizard,Registry.WinUpdate,RunOnce.PaschkeRuntimes,RegistrySettings
+UpdateInis=WallpaperIniUpdate
 
 [RunOnce.BatchDelay]
 HKLM,%KEY_RUNONCE%,BatchRun1,,"%25%\rundll.exe setupx.dll,InstallHinfSection Delete.MSN.Icon 4 %1%\msbatch.inf"
@@ -270,3 +271,10 @@ HKLM,%KEY_RUNONCE%,BatchCLEAN,,"%25%\rundll32.exe advpack.dll,DelNodeRunDLL32 C:
 ; Windows 98 installation directory.
 HKLM,%KEY_RUNONCE%,BatchReg1,,"%25%\regedit.exe /s %1%\science.reg"
 HKLM,%KEY_RUNONCE%,BatchReg2,,"%25%\regedit.exe /s %1%\viewhidd.reg"
+HKLM,%KEY_RUNONCE%,BatchReg3,,"%25%\regedit.exe /s %1%\wallpapr.reg"
+
+[WallpaperIniUpdate]
+Win.ini,Desktop,"Wallpaper=C:\sci.bmp"
+Win.ini,Desktop,"TileWallpaper=0"
+Win.ini,Desktop,"WallpaperStyle=0"
+Win.ini,Desktop,"Pattern=(None)"

@@ -1,0 +1,37 @@
+REGEDIT4
+
+[HKEY_CURRENT_USER\Control Panel\Desktop]
+"Wallpaper"="C:\\sci.bmp"
+
+[HKEY_CURRENT_USER\Control Panel\Desktop]
+"TileWallpaper"="0"
+
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Desktop\General]
+"TileWallpaper"="0"
+
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Desktop\General]
+"Wallpaper"="C:\\sci.bmp"
+
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Desktop\General]
+"BackupWallpaper"="C:\\sci.bmp"
+
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Desktop\General]
+"WallpaperFileTime"=hex:00,a3,8a,ab,76,fb,d5,01,
+
+[HKEY_USERS\.DEFAULT\Control Panel\Desktop]
+"Wallpaper"="C:\\sci.bmp"
+
+[HKEY_USERS\.DEFAULT\Control Panel\Desktop]
+"TileWallpaper"="0"
+
+[HKEY_USERS\.DEFAULT\Software\Microsoft\Internet Explorer\Desktop\General]
+"TileWallpaper"="0"
+
+[HKEY_USERS\.DEFAULT\Software\Microsoft\Internet Explorer\Desktop\General]
+"Wallpaper"="C:\\sci.bmp"
+
+[HKEY_USERS\.DEFAULT\Software\Microsoft\Internet Explorer\Desktop\General]
+"BackupWallpaper"="C:\\sci.bmp"
+
+[HKEY_USERS\.DEFAULT\Software\Microsoft\Internet Explorer\Desktop\General]
+"WallpaperFileTime"=hex:00,a3,8a,ab,76,fb,d5,01,
