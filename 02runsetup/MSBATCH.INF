@@ -274,7 +274,7 @@ HKLM,%KEY_RUNONCE%,BatchReg2,,"%25%\regedit.exe /s %1%\viewhidd.reg"
 HKLM,%KEY_RUNONCE%,BatchReg3,,"%25%\regedit.exe /s %1%\wallpapr.reg"
 
 [WallpaperIniUpdate]
-Win.ini,Desktop,"Wallpaper=C:\sci.bmp"
-Win.ini,Desktop,"TileWallpaper=0"
-Win.ini,Desktop,"WallpaperStyle=0"
-Win.ini,Desktop,"Pattern=(None)"
+%10%\win.ini,Desktop,,"Wallpaper=C:\sci.bmp"
+%10%\win.ini,Desktop,,"TileWallpaper=0"
+%10%\win.ini,Desktop,,"WallpaperStyle=0"
+%10%\win.ini,Desktop,,"Pattern=(None)"
