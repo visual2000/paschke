@@ -19,8 +19,7 @@ MyShortcut.Arguments = "C:\UPD_DESK.VBS"
 MyShortcut.WorkingDirectory = WSHShell.ExpandEnvironmentStrings("C:\WINDOWS")
 MyShortcut.Save
 
-Set MyShortcut = WSHShell.CreateShortcut(DesktopPath & "\Programs\StartUp\wallpapr.lnk")
-MyShortcut.TargetPath = WSHShell.ExpandEnvironmentStrings("c:\paper.exe")
-MyShortcut.Arguments = "C:\sci.bmp"
+Set MyShortcut = WSHShell.CreateShortcut(DesktopPath & "\Programs\StartUp\wallppr.lnk")
+MyShortcut.TargetPath = WSHShell.ExpandEnvironmentStrings("c:\wallppr.exe")
 MyShortcut.WorkingDirectory = WSHShell.ExpandEnvironmentStrings("C:\")
 MyShortcut.Save
