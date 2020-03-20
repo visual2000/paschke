@@ -27,4 +27,4 @@ For Each folderIdx in files
 Next
 
 ' also copy command.PIF...  This fixes the VBEMP COMMAND.COM windowed mode display bug...
-fso.CopyFile("C:\fixcmd.PIF", "C:\WINDOWS\command.PIF")
+fso.CopyFile "C:\fixcmd.PIF", "C:\WINDOWS\command.PIF"
