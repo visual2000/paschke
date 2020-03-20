@@ -1,3 +1,4 @@
+@ECHO OFF
 REM This file is to kick off the Windows 95 installation.
 
 C:
