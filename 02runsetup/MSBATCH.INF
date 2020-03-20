@@ -154,10 +154,6 @@ ValidatedLogon=0
 
 [Install]
 AddReg=RunOnce.BatchDelay,Run.Installed.Components,Skip.PCMCIA.Wizard,Registry.WinUpdate,RunOnce.PaschkeRuntimes,RegistrySettings
-CopyFiles=Fix.Command.Pif
-
-[Fix.Command.Pif]
-%01%\fixcmd.PIF,%10%\command.PIF
 
 [RunOnce.BatchDelay]
 HKLM,%KEY_RUNONCE%,BatchRun1,,"%25%\rundll.exe setupx.dll,InstallHinfSection Delete.MSN.Icon 4 %1%\msbatch.inf"
@@ -257,7 +253,6 @@ HKLM,System\CurrentControlSet\Services\Class\PCMCIA,SkipWizardForBatchSetup,,1
 [DestinationDirs]
 OLS.Icons=49070,Online~1
 QuickLaunch.Icons=49050,Micros~1\Intern~1\QuickL~1
-Fix.Command.Pif=10
 
 [Strings]
 KEY_RUNONCE="SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce"
