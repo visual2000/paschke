@@ -25,3 +25,6 @@ For Each folderIdx in files
   MyShortcut.WorkingDirectory = WSHShell.ExpandEnvironmentStrings("C:\games")
   MyShortcut.Save
 Next
+
+' also copy command.PIF...  This fixes the VBEMP COMMAND.COM windowed mode display bug...
+fso.CopyFile("C:\fixcmd.PIF", "C:\WINDOWS\command.PIF")
