@@ -28,6 +28,7 @@ function _linux_mount() {
         loopback="${loopback}p1"
     fi
     echo "Mounting ${loopback} on ${mountPoint}..." 1>&2
+    # shellcheck disable=SC2086
     sudo mount "${loopback}" "${mountPoint}" $options
 
     echo "$mountPoint"
